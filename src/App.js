@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { LoginContainer } from './bundles/session/containers';
-import './App.css';
+import './css/App.css';
 
 const App = () => {
   return (
