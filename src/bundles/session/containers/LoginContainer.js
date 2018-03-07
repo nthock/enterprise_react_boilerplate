@@ -1,9 +1,11 @@
 import React from 'react';
+import LoginForm from '../components/LoginForm';
+import '../../../css/sessions.css';
 
 const LoginContainer = ({ history }) => (
   <div className="login-page">
     <h1 className="title">Log in</h1>
-    <p>Hey hey</p>
+    <LoginForm history={history} />
   </div>
 );
 
