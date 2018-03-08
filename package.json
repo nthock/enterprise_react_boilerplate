@@ -5,8 +5,10 @@
   "dependencies": {
     "antd": "^3.2.3",
     "apollo-boost": "^0.1.1",
+    "apollo-client-preset": "^1.0.8",
     "classnames": "^2.2.5",
     "graphql": "^0.13.1",
+    "graphql-tag": "^2.8.0",
     "lodash": "^4.17.5",
     "node-sass-chokidar": "^0.0.3",
     "npm-run-all": "^4.1.2",
