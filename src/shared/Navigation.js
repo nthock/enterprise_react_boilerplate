@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Layout, Menu, Icon, Avatar } from 'antd';
-// import Auth from '../helpers/auth';
+import Auth from '../helpers/auth';
 
 const { Header, Sider, Content } = Layout;
 const SubMenu = Menu.SubMenu;
@@ -63,7 +63,6 @@ class Navigation extends React.Component {
               <Menu.Item key="7">Nested Menu 4</Menu.Item>
             </SubMenu>
 
-            { /*
             <Menu.Item key="8">
               <a onClick={(e) => {
                 e.preventDefault();
@@ -74,7 +73,6 @@ class Navigation extends React.Component {
                 <span>Log Out</span>
               </a>
             </Menu.Item>
-            */ }
 
           </Menu>
         </Sider>
