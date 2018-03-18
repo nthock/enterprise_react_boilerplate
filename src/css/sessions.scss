@@ -1,6 +1,6 @@
 @import "_variables";
 
-.login-page {
+.login-page, .sign-up {
   min-height: 100vh;
   background-color: $primaryColor;
 
@@ -10,17 +10,26 @@
     color: #ffffff;
   }
 
+  .signup-form {
+    max-width: 500px;
+  }
+
   .login-form {
-    background-color: #ffffff;
     max-width: 300px;
+  }
+
+  .login-form, .signup-form {
+    background-color: #ffffff;
     margin: 8% auto;
     padding: 60px 18px 30px 18px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   }
-  .login-form-forgot {
-    margin-top: 8px;
-  }
+
   .login-form-button {
     width: 100%;
-  }  
+  }
+
+  .form-footer {
+    margin-top: 10px;
+  }
 }

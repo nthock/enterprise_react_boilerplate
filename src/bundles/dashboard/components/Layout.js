@@ -1,5 +1,5 @@
 import React from 'react';
-import { Redirect, Switch, Route } from 'react-router-dom';
+import { Redirect, Route } from 'react-router-dom';
 import { Navigation } from '../../../shared';
 import Auth from '../../../helpers/auth';
 import { Modal } from '../../../shared';

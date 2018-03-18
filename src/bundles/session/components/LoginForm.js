@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Icon, Input, Button, Checkbox } from 'antd';
+import { Form, Icon, Input, Button } from 'antd';
 const FormItem = Form.Item;
 
 const LoginForm = (props) => {
@@ -29,7 +29,10 @@ const LoginForm = (props) => {
           <Button onClick={(e) => handleSave()} type="primary" htmlType="submit" className="login-form-button">
             Log in
           </Button>
-          <a className="login-form-forgot" href="">Forgot password?</a>
+          <div className="form-footer">
+            <a href="">Forgot password?</a><br/>
+            <a href="/signup">Do not have account? Sign up here</a>
+          </div>
         </FormItem>
       </Form>
     </div>
