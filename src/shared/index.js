@@ -1,5 +1,7 @@
 import Navigation from './Navigation';
 import Loader from './Loader';
-import Modal from './Modal';
+import Dialog from './Dialog';
+import Notification from './Notification';
+import PrivateRoute from './PrivateRoute';
 
-export { Navigation, Loader, Modal }
+export { Navigation, Loader, Dialog, Notification, PrivateRoute }

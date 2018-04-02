@@ -1,31 +1,24 @@
 import React from 'react';
-import { Redirect, Route } from 'react-router-dom';
-import { Navigation } from '../../../shared';
-import Auth from '../../../helpers/auth';
-import { Modal } from '../../../shared';
+import { Route } from 'react-router-dom';
+import { Navigation, Dialog, PrivateRoute } from '../../../shared';
 
-const Layout = ({ component: Component, title, ...rest}) => (
+const Layout = ({ component: Component, title, currentUser, ...rest}) => (
   <div>
-    <Navigation title={title}>
+    <Navigation title={title} currentUser={currentUser}>
       <Route {...rest} render={matchProps => (
-        <Modal>
-
-          {
-            Auth.currentUser() ? (
-              <Component {...matchProps} />
-            ) : (
-              <Redirect to={{
-                pathname: '/dashboard/unauthorized',
-                state: { from: '' },
-              }}
-              />
-            )
-          }
-
-        </Modal>
+        <Dialog>
+          <Component currentUser={currentUser} {...matchProps} />
+        </Dialog>
       )} />
     </Navigation>
   </div>
 );
+// const Layout = ({ component: Component, title, path, currentUser, ...rest}) => (
+//   <div>
+//     <Navigation title={title} currentUser={currentUser}>
+//       <PrivateRoute path={path} component={Component} />
+//     </Navigation>
+//   </div>
+// );
 
 export default Layout;

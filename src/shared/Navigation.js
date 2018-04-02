@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Layout, Menu, Icon, Avatar } from 'antd';
-import Auth from '../helpers/auth';
+import { signOut } from '../helpers/auth';
 
 const { Header, Sider, Content } = Layout;
 const SubMenu = Menu.SubMenu;
@@ -16,6 +16,8 @@ class Navigation extends React.Component {
     });
   }
   render() {
+    const { currentUser } = this.props;
+
     return (
       <Layout className="main-layout">
         <Sider
@@ -35,12 +37,14 @@ class Navigation extends React.Component {
               </Link>
             </Menu.Item>
 
-            <Menu.Item key="2">
-              <Link to={'/dashboard/admins'}>
-                <Icon type="user" />
-                <span>Admins</span>
-              </Link>
-            </Menu.Item>
+            { currentUser.admin &&
+              <Menu.Item key="2">
+                <Link to={'/dashboard/admins'}>
+                  <Icon type="user" />
+                  <span>Admins</span>
+                </Link>
+              </Menu.Item>
+            }
 
             <Menu.Item key="3">
               <Link to={'/dashboard/organisations'}>
@@ -66,7 +70,7 @@ class Navigation extends React.Component {
             <Menu.Item key="8">
               <a onClick={(e) => {
                 e.preventDefault();
-                Auth.signOut();
+                signOut();
                 window.location.href = '/';
               }}>
                 <Icon type="logout" />

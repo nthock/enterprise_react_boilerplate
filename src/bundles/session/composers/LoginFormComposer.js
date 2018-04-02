@@ -3,7 +3,8 @@ import { graphql } from 'react-apollo';
 import LoginForm from '../components/LoginForm';
 import { displayLoadingState } from '../../../helpers/compose';
 import { authenticateUser } from '../graphql';
-import Auth from '../../../helpers/auth';
+import { signIn, signOut} from '../../../helpers/auth';
+// import Auth from '../../../helpers/auth';
 
 const LoginFormComposer = compose(
   graphql(authenticateUser),
@@ -16,10 +17,10 @@ const LoginFormComposer = compose(
       })
         .then(({ data }) => {
           if (data.authenticate) {
-            Auth.signIn(data.authenticate);
+            signIn(data.authenticate)
             history.push('/dashboard');
           } else {
-            Auth.signOut();
+            signOut()
           }
         });
     },
