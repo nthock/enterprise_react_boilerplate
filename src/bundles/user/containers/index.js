@@ -1,3 +1,4 @@
 import SignUpContainer from './SignUpContainer';
+import AcceptInvitationContainer from './AcceptInvitationContainer';
 
-export { SignUpContainer };
+export { SignUpContainer, AcceptInvitationContainer };

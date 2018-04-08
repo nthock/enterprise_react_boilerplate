@@ -33,34 +33,6 @@ const AdminForm = (props) => {
           onChange={e => setFormData({ ...formData, email: e.target.value })}
         />
       </FormItem>
-      <FormItem
-        label="Password"
-        validateStatus={formErrors.password && 'error'}
-        hasFeedback
-        help={formErrors.password}
-      >
-        <Input
-          prefix={<Icon type="lock" style={{ fontSize: 13 }} />}
-          name="Password"
-          type="password"
-          placeholder="Password"
-          onChange={e => setFormData({ ...formData, password: e.target.value })}
-        />
-      </FormItem>
-      <FormItem
-        label="Password Confirmation"
-        validateStatus={formErrors.password_confirmation && 'error'}
-        hasFeedback
-        help={formErrors.password_confirmation}
-      >
-        <Input
-          prefix={<Icon type="lock" style={{ fontSize: 13 }} />}
-          name="Password Confirmation"
-          type="password"
-          placeholder="Password Confirmation"
-          onChange={e => setFormData({ ...formData, password_confirmation: e.target.value })}
-        />
-      </FormItem>
       <div className="dialog-form-btn-grp">
         <Button size="large" onClick={handleClose}>Cancel</Button>
         <Button type="primary" className="save-btn" size="large" onClick={handleSave}>Create Admin</Button>

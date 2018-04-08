@@ -8,6 +8,25 @@ export const createUserMutation = gql`
       token
       admin
       super_admin
+      token
+      errors {
+        key
+        value
+      }
+    }
+  }
+`;
+
+export const acceptInviteMutation = gql`
+  mutation acceptInvite($invitation_token: String, $password: String, $password_confirmation: String) {
+    acceptInvite(input: { invitation_token: $invitation_token, password: $password, password_confirmation: $password_confirmation }) {
+      id
+      name
+      email
+      designation
+      admin
+      super_admin
+      token
       errors {
         key
         value

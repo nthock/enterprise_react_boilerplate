@@ -6,8 +6,8 @@ import { Notification } from '../../../shared';
 
 const AdminFormComposer = compose(
   graphql(addAdminMutation),
-  withState('formData', 'setFormData', { id: '', name: '', email: '', password: '', password_confirmation: '' }),
-  withState('formErrors', 'setErrors', { id: '', name: '', email: '', password: '', password_confirmation: '' }),
+  withState('formData', 'setFormData', { id: '', name: '', email: '' }),
+  withState('formErrors', 'setErrors', { id: '', name: '', email: '' }),
   withHandlers({
     handleSave: props => () => {
       const { formData, formErrors, setErrors, mutate, Dialog } = props;
@@ -20,8 +20,6 @@ const AdminFormComposer = compose(
             // store.writeQuery({ query: adminListQuery, data });
           } else {
             setErrors(Object.assign({ name: '' }, formatErrors(addAdmin.errors)));
-            Notification('error', addAdmin.errors[0].key, addAdmin.errors[0].value);
-            Dialog.close();
           }
         }
       })

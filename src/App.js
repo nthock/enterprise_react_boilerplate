@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { LoginContainer } from './bundles/session/containers';
-import { SignUpContainer } from './bundles/user/containers';
+import { SignUpContainer, AcceptInvitationContainer } from './bundles/user/containers';
 import { DashboardContainer } from './bundles/dashboard/containers';
 import { AdminListContainer } from './bundles/admin/containers';
 import PrivateRoute from './shared/PrivateRoute';
@@ -15,6 +15,7 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={LoginContainer} />
         <Route exact path="/signup" component={SignUpContainer} />
+        <Route exact path="/invite" component={AcceptInvitationContainer} />
         <PrivateRoute path="/dashboard/admins" component={AdminListContainer} />
         <PrivateRoute path="/dashboard" component={DashboardContainer} />
         <Route component={() => <p>Page Not Found</p>} />
