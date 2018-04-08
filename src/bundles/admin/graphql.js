@@ -22,3 +22,16 @@ export const addAdminMutation = gql`
   }
   ${AdminDataFragment}
 `;
+
+export const sendInviteMutation = gql`
+  mutation sendInvite($id: ID) {
+    sendInvite(input: { id: $id } ) {
+      ...AdminData
+      errors {
+        key
+        value
+      }
+    }
+  }
+  ${AdminDataFragment}
+`;

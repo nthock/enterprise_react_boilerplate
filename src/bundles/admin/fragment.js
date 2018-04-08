@@ -6,6 +6,7 @@ export const AdminDataFragment = gql`
       name
       email
       designation
+      status
       admin
       super_admin
     }

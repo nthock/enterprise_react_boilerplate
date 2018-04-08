@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from 'antd';
 import AdminForm from '../components/AdminForm';
+import AdminList from '../components/AdminList';
 
 const AdminListContainer = (props) => {
   const { Dialog } = props;
@@ -11,12 +12,14 @@ const AdminListContainer = (props) => {
       <Button
         type="primary"
         onClick={(e) => {
-          e.preventDefault;
           Dialog.open(
             <AdminForm Dialog={Dialog} />,
             { title: 'Add New Admin' }
           );
         }}>Add Admin</Button>
+      <div className="mt-20">
+        <AdminList />
+      </div>
     </div>
   );
 };
