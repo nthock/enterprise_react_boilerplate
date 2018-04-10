@@ -1,13 +1,13 @@
 import React from 'react';
 import { Form, Icon, Input, Button } from 'antd';
-import enhance from '../composers/AcceptInvitationComposer';
+import enhance from '../composers/ResetPasswordComposer';
 import '../../../css/sessions.css';
 
 const FormItem = Form.Item;
-const AcceptInvitationContainer = ({ history, formData, setFormData, formErrors, handleSave }) => {
+const ResetPasswordContainer = ({ history, formData, setFormData, formErrors, handleSave }) => {
   return (
     <div className="sign-up">
-      <h1 className="title">Accept Invite</h1>
+      <h1 className="title">Reset Password</h1>
       <div className="signup-form">
         { formErrors.invalid_user &&
           <p className="error-message">{formErrors.invalid_user}</p>
@@ -41,7 +41,7 @@ const AcceptInvitationContainer = ({ history, formData, setFormData, formErrors,
           </FormItem>
           <FormItem>
             <Button onClick={(e) => handleSave()} type="primary" htmlType="submit" className="login-form-button">
-              Proceed
+              Reset Password
             </Button>
           </FormItem>
         </Form>
@@ -50,4 +50,4 @@ const AcceptInvitationContainer = ({ history, formData, setFormData, formErrors,
   );
 }
 
-export default enhance(AcceptInvitationContainer);
+export default enhance(ResetPasswordContainer);

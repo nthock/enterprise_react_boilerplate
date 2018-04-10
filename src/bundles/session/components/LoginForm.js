@@ -1,5 +1,6 @@
 import React from 'react';
 import { Form, Icon, Input, Button } from 'antd';
+import { Link } from 'react-router-dom';
 const FormItem = Form.Item;
 
 const LoginForm = (props) => {
@@ -30,7 +31,7 @@ const LoginForm = (props) => {
             Log in
           </Button>
           <div className="form-footer">
-            <a href="">Forgot password?</a><br/>
+            <Link to='/forget_password'>Forgot password?</Link><br />
             <a href="/signup">Do not have account? Sign up here</a>
           </div>
         </FormItem>
