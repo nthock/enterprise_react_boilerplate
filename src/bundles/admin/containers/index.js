@@ -1,3 +1,3 @@
-import AdminListContainer from './AdminListContainer';
+import AdminListContainer from "./AdminListContainer";
 
-export { AdminListContainer }
+export { AdminListContainer };

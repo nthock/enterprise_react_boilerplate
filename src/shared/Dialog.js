@@ -1,27 +1,28 @@
-import React from 'react';
-import { Modal } from 'antd';
+import React from "react";
+import PropTypes from "prop-types";
+import { Modal } from "antd";
 
 class Dialog extends React.Component {
   constructor() {
     super();
-    this.state = { title: '', content: '', size: '', open: false };
+    this.state = { title: "", content: "", open: false };
   }
 
-  open = (Component, { title, size }) => {
-    this.setState({ open: true, content: Component, title, size });
-  }
+  open = (Component, { title }) => {
+    this.setState({ open: true, content: Component, title });
+  };
 
   close = () => {
-    this.setState({ open: false, content: '', title: '', size: '' });
-  }
+    this.setState({ open: false, content: "", title: "" });
+  };
 
   render() {
     const { title, content } = this.state;
-    const childrenWithProps = React.Children.map(this.props.children,
-      child => React.cloneElement(child, { Dialog: this }),
+    const childrenWithProps = React.Children.map(this.props.children, child =>
+      React.cloneElement(child, { Dialog: this })
     );
 
-    return(
+    return (
       <div>
         {childrenWithProps}
         <Modal
@@ -36,8 +37,12 @@ class Dialog extends React.Component {
           {content}
         </Modal>
       </div>
-    )
+    );
   }
 }
+
+Dialog.propTypes = {
+  children: PropTypes.element.isRequired
+};
 
 export default Dialog;

@@ -1,4 +1,4 @@
-import { gql } from 'apollo-boost';
+import { gql } from "apollo-boost";
 
 export const verifyTokenQuery = gql`
   query verifyToken($token: String) {
@@ -29,4 +29,4 @@ export const authenticateUser = gql`
       }
     }
   }
- `;
+`;

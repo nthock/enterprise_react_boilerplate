@@ -1,23 +1,24 @@
-import React from 'react';
-import { Route, Redirect } from 'react-router-dom';
-import { verifyToken } from '../helpers/auth';
-import { Loader } from '../helpers/loader';
-import Dialog from './Dialog';
-import Navigation from './Navigation';
+import React from "react";
+import PropTypes from "prop-types";
+import { Route, Redirect } from "react-router-dom";
+import { verifyToken } from "../helpers/auth";
+import { Loader } from "../helpers/loader";
+import Dialog from "./Dialog";
+import Navigation from "./Navigation";
 
 class PrivateRoute extends React.Component {
   state = {
     loading: true,
     currentUser: null
-  }
+  };
 
   componentDidMount() {
-    console.log('authenticating...');
+    console.log("authenticating...");
 
     verifyToken().then(({ data }) => {
       this.setState({
         loading: false,
-        currentUser: data.verifyToken,
+        currentUser: data.verifyToken
       });
     });
   }
@@ -26,7 +27,7 @@ class PrivateRoute extends React.Component {
     const { component: Component, ...rest } = this.props;
     const { currentUser, loading } = this.state;
     if (loading) {
-      return (<Loader />);
+      return <Loader />;
     }
 
     return (
@@ -34,7 +35,7 @@ class PrivateRoute extends React.Component {
         {...rest}
         render={props => (
           <div>
-            { currentUser === null && <Redirect to={{ pathname: '/', state: { from: this.props.location } }} />}
+            {currentUser === null && <Redirect to={{ pathname: "/" }} />}
             <Navigation currentUser={currentUser}>
               <Dialog>
                 <Component {...props} currentUser={currentUser} />
@@ -46,5 +47,9 @@ class PrivateRoute extends React.Component {
     );
   }
 }
+
+PrivateRoute.propTypes = {
+  component: PropTypes.func.isRequired
+};
 
 export default PrivateRoute;

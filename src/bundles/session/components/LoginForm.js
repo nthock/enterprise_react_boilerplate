@@ -1,9 +1,11 @@
-import React from 'react';
-import { Form, Icon, Input, Button } from 'antd';
-import { Link } from 'react-router-dom';
+import React from "react";
+import PropTypes from "prop-types";
+import { Form, Icon, Input, Button } from "antd";
+import { Link } from "react-router-dom";
+
 const FormItem = Form.Item;
 
-const LoginForm = (props) => {
+const LoginForm = props => {
   const { handleSave, formData, setFormData } = props;
 
   return (
@@ -23,22 +25,38 @@ const LoginForm = (props) => {
             name="Password"
             type="password"
             placeholder="Password"
-            onChange={e => setFormData({ ...formData, password: e.target.value })}
+            onChange={e =>
+              setFormData({ ...formData, password: e.target.value })
+            }
           />
         </FormItem>
         <FormItem>
-          <Button onClick={(e) => handleSave()} type="primary" htmlType="submit" className="login-form-button">
+          <Button
+            onClick={() => handleSave()}
+            type="primary"
+            htmlType="submit"
+            className="login-form-button"
+          >
             Log in
           </Button>
           <div className="form-footer">
-            <Link to='/forget_password'>Forgot password?</Link><br />
+            <Link to="/forget_password">Forgot password?</Link>
+            <br />
             <a href="/signup">Do not have account? Sign up here</a>
           </div>
         </FormItem>
       </Form>
     </div>
   );
+};
 
-}
+LoginForm.propTypes = {
+  formData: PropTypes.shape({
+    name: PropTypes.string,
+    email: PropTypes.string
+  }).isRequired,
+  handleSave: PropTypes.func.isRequired,
+  setFormData: PropTypes.func.isRequired
+};
 
 export default LoginForm;

@@ -1,12 +1,12 @@
-import { compose, withState, withHandlers } from 'recompose';
-import { graphql } from 'react-apollo';
-import { forgotPasswordMutation } from '../graphql';
+import { compose, withState, withHandlers } from "recompose";
+import { graphql } from "react-apollo";
+import { forgotPasswordMutation } from "../graphql";
 
 const ForgotPasswordMutation = compose(
   graphql(forgotPasswordMutation),
-  withState('formData', 'setFormData', { email: '' } ),
-  withState('formErrors', 'setFormErrors', { email: '' } ),
-  withState('submit', 'setSubmit', false),
+  withState("formData", "setFormData", { email: "" }),
+  withState("formErrors", "setFormErrors", { email: "" }),
+  withState("submit", "setSubmit", false),
   withHandlers({
     handleSave: props => () => {
       const { mutate, formData, setSubmit, setFormErrors } = props;
@@ -15,7 +15,7 @@ const ForgotPasswordMutation = compose(
       const validateValidEmail = regex.test(email);
 
       if (!validateValidEmail) {
-        setFormErrors({ email: 'Invalid Email' })
+        setFormErrors({ email: "Invalid Email" });
       } else {
         setSubmit(true);
         mutate({ variables: formData });

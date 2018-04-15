@@ -1,9 +1,21 @@
-import { gql } from 'apollo-boost';
-import { UserDataFragment } from './fragment.js';
+import { gql } from "apollo-boost";
+import { UserDataFragment } from "./fragment";
 
 export const createUserMutation = gql`
-  mutation createUser($name: String, $email: String, $password: String, $password_confirmation: String) {
-    create_user(input: { name: $name, email: $email, password: $password, password_confirmation: $password_confirmation }) {
+  mutation createUser(
+    $name: String
+    $email: String
+    $password: String
+    $password_confirmation: String
+  ) {
+    create_user(
+      input: {
+        name: $name
+        email: $email
+        password: $password
+        password_confirmation: $password_confirmation
+      }
+    ) {
       ...UserData
     }
   }
@@ -11,8 +23,18 @@ export const createUserMutation = gql`
 `;
 
 export const acceptInviteMutation = gql`
-  mutation acceptInvite($invitation_token: String, $password: String, $password_confirmation: String) {
-    acceptInvite(input: { invitation_token: $invitation_token, password: $password, password_confirmation: $password_confirmation }) {
+  mutation acceptInvite(
+    $invitation_token: String
+    $password: String
+    $password_confirmation: String
+  ) {
+    acceptInvite(
+      input: {
+        invitation_token: $invitation_token
+        password: $password
+        password_confirmation: $password_confirmation
+      }
+    ) {
       ...UserData
     }
   }
@@ -31,9 +53,19 @@ export const forgotPasswordMutation = gql`
   }
 `;
 
-export const resetForgotPassword = gql`
-  mutation resetForgotPassword($reset_password_token: String, $password: String, $password_confirmation: String) {
-    resetForgotPassword(input: { reset_password_token: $reset_password_token, password: $password, password_confirmation: $password_confirmation }) {
+export const resetForgotPasswordQuery = gql`
+  mutation resetForgotPassword(
+    $reset_password_token: String
+    $password: String
+    $password_confirmation: String
+  ) {
+    resetForgotPassword(
+      input: {
+        reset_password_token: $reset_password_token
+        password: $password
+        password_confirmation: $password_confirmation
+      }
+    ) {
       ...UserData
     }
   }

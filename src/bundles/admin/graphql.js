@@ -1,5 +1,5 @@
-import { gql } from 'apollo-boost';
-import { AdminDataFragment } from './fragment.js';
+import { gql } from "apollo-boost";
+import { AdminDataFragment } from "./fragment";
 
 export const adminListQuery = gql`
   query {
@@ -25,7 +25,7 @@ export const addAdminMutation = gql`
 
 export const sendInviteMutation = gql`
   mutation sendInvite($id: ID) {
-    sendInvite(input: { id: $id } ) {
+    sendInvite(input: { id: $id }) {
       ...AdminData
       errors {
         key

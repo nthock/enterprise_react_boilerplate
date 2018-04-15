@@ -1,15 +1,17 @@
-import React from 'react';
-import enhance from '../composers/SignUpFormComposer';
-import { Form, Icon, Input, Button } from 'antd';
+import React from "react";
+import PropTypes from "prop-types";
+import { Form, Icon, Input, Button } from "antd";
+import enhance from "../composers/SignUpFormComposer";
+
 const FormItem = Form.Item;
 
-const SignUpForm = (props) => {
+const SignUpForm = props => {
   const { handleSave, formData, setFormData, formErrors } = props;
   return (
     <div className="signup-form">
       <Form>
         <FormItem
-          validateStatus={formErrors.name && 'error'}
+          validateStatus={formErrors.name && "error"}
           hasFeedback
           help={formErrors.name}
         >
@@ -21,7 +23,7 @@ const SignUpForm = (props) => {
           />
         </FormItem>
         <FormItem
-          validateStatus={formErrors.email && 'error'}
+          validateStatus={formErrors.email && "error"}
           hasFeedback
           help={formErrors.email}
         >
@@ -33,7 +35,7 @@ const SignUpForm = (props) => {
           />
         </FormItem>
         <FormItem
-          validateStatus={formErrors.password && 'error'}
+          validateStatus={formErrors.password && "error"}
           hasFeedback
           help={formErrors.password}
         >
@@ -42,11 +44,13 @@ const SignUpForm = (props) => {
             name="Password"
             type="password"
             placeholder="Password"
-            onChange={e => setFormData({ ...formData, password: e.target.value })}
+            onChange={e =>
+              setFormData({ ...formData, password: e.target.value })
+            }
           />
         </FormItem>
         <FormItem
-          validateStatus={formErrors.password_confirmation && 'error'}
+          validateStatus={formErrors.password_confirmation && "error"}
           hasFeedback
           help={formErrors.password_confirmation}
         >
@@ -55,11 +59,21 @@ const SignUpForm = (props) => {
             name="Password Confirmation"
             type="password"
             placeholder="Password Confirmation"
-            onChange={e => setFormData({ ...formData, password_confirmation: e.target.value })}
+            onChange={e =>
+              setFormData({
+                ...formData,
+                password_confirmation: e.target.value
+              })
+            }
           />
         </FormItem>
         <FormItem>
-          <Button onClick={(e) => handleSave()} type="primary" htmlType="submit" className="login-form-button">
+          <Button
+            onClick={() => handleSave()}
+            type="primary"
+            htmlType="submit"
+            className="login-form-button"
+          >
             Sign Up
           </Button>
           <div className="form-footer">
@@ -69,7 +83,23 @@ const SignUpForm = (props) => {
       </Form>
     </div>
   );
+};
 
-}
+SignUpForm.propTypes = {
+  formData: PropTypes.shape({
+    name: PropTypes.string,
+    email: PropTypes.string,
+    password: PropTypes.string,
+    password_confirmation: PropTypes.string
+  }).isRequired,
+  formErrors: PropTypes.shape({
+    name: PropTypes.string,
+    email: PropTypes.string,
+    password: PropTypes.string,
+    password_confirmation: PropTypes.string
+  }).isRequired,
+  handleSave: PropTypes.func.isRequired,
+  setFormData: PropTypes.func.isRequired
+};
 
 export default enhance(SignUpForm);

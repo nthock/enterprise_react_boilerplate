@@ -1,2 +1,2 @@
-import DashboardContainer from './DashboardContainer';
-export { DashboardContainer }
+import DashboardContainer from "./DashboardContainer";
+export { DashboardContainer };
