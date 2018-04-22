@@ -23,8 +23,8 @@ test("it should match snapshot", () => {
 
 test("it should have the h1 element with the name 'Log in'", () => {
   const wrapper = shallow(<LoginContainer history={history} />);
-  expect(wrapper.find("h1").text()).toEqual("Log in")
-})
+  expect(wrapper.find("h1").text()).toEqual("Log in");
+});
 
 test("it should contain the LoginFormComposer as LoginForm", () => {
   const wrapper = shallow(<LoginContainer history={history} />);
