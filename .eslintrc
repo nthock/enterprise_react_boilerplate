@@ -9,7 +9,8 @@
     },
     "plugins": ["prettier"],
     "env": {
-      "browser": true
+      "browser": true,
+      "jest": true,
     },
     "rules": {
       "no-debugger": 0,
