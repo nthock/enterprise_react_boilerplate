@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it should match snapshot 1`] = `
+<div
+  className="login-page"
+>
+  <h1
+    className="title"
+  >
+    Log in
+  </h1>
+  <div
+    className="login-form"
+  >
+    <form
+      className="ant-form ant-form-horizontal"
+      onSubmit={[Function]}
+    >
+      <div
+        className="ant-row ant-form-item"
+        style={undefined}
+      >
+        <div
+          className="ant-form-item-control-wrapper"
+        >
+          <div
+            className="ant-form-item-control"
+          >
+            <span
+              className="ant-form-item-children"
+            >
+              <span
+                className="ant-input-affix-wrapper"
+                style={undefined}
+              >
+                <span
+                  className="ant-input-prefix"
+                >
+                  <i
+                    className="anticon anticon-mail"
+                    style={
+                      Object {
+                        "fontSize": 13,
+                      }
+                    }
+                  />
+                </span>
+                <input
+                  className="ant-input"
+                  disabled={false}
+                  id="email-field"
+                  name="Email"
+                  onChange={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Email"
+                  style={null}
+                  type="text"
+                />
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ant-row ant-form-item"
+        style={undefined}
+      >
+        <div
+          className="ant-form-item-control-wrapper"
+        >
+          <div
+            className="ant-form-item-control"
+          >
+            <span
+              className="ant-form-item-children"
+            >
+              <span
+                className="ant-input-affix-wrapper"
+                style={undefined}
+              >
+                <span
+                  className="ant-input-prefix"
+                >
+                  <i
+                    className="anticon anticon-lock"
+                    style={
+                      Object {
+                        "fontSize": 13,
+                      }
+                    }
+                  />
+                </span>
+                <input
+                  className="ant-input"
+                  disabled={false}
+                  name="Password"
+                  onChange={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Password"
+                  style={null}
+                  type="password"
+                />
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ant-row ant-form-item"
+        style={undefined}
+      >
+        <div
+          className="ant-form-item-control-wrapper"
+        >
+          <div
+            className="ant-form-item-control"
+          >
+            <span
+              className="ant-form-item-children"
+            >
+              <button
+                className="ant-btn login-form-button ant-btn-primary"
+                onClick={[Function]}
+                type="submit"
+              >
+                <span>
+                  Log in
+                </span>
+              </button>
+              <div
+                className="form-footer"
+              >
+                <a
+                  href="/forget_password"
+                  onClick={[Function]}
+                >
+                  Forgot password?
+                </a>
+                <br />
+                <a
+                  href="/signup"
+                >
+                  Do not have account? Sign up here
+                </a>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+`;

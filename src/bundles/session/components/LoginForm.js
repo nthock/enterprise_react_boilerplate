@@ -16,6 +16,7 @@ const LoginForm = props => {
             prefix={<Icon type="mail" style={{ fontSize: 13 }} />}
             placeholder="Email"
             name="Email"
+            id="email-field"
             onChange={e => setFormData({ ...formData, email: e.target.value })}
           />
         </FormItem>
