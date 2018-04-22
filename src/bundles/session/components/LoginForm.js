@@ -7,7 +7,6 @@ const FormItem = Form.Item;
 
 const LoginForm = props => {
   const { handleSave, formData, setFormData } = props;
-
   return (
     <div className="login-form">
       <Form>
@@ -26,6 +25,7 @@ const LoginForm = props => {
             name="Password"
             type="password"
             placeholder="Password"
+            id="password-field"
             onChange={e =>
               setFormData({ ...formData, password: e.target.value })
             }
@@ -43,7 +43,7 @@ const LoginForm = props => {
           <div className="form-footer">
             <Link to="/forget_password">Forgot password?</Link>
             <br />
-            <a href="/signup">Do not have account? Sign up here</a>
+            <Link to="/signup">Do not have account? Sign up here</Link>
           </div>
         </FormItem>
       </Form>

@@ -93,6 +93,7 @@ exports[`it should match snapshot 1`] = `
                 <input
                   className="ant-input"
                   disabled={false}
+                  id="password-field"
                   name="Password"
                   onChange={[Function]}
                   onKeyDown={[Function]}
@@ -139,6 +140,7 @@ exports[`it should match snapshot 1`] = `
                 <br />
                 <a
                   href="/signup"
+                  onClick={[Function]}
                 >
                   Do not have account? Sign up here
                 </a>
