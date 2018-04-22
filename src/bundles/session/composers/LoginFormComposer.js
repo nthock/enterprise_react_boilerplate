@@ -5,7 +5,7 @@ import { displayLoadingState } from "../../../helpers/compose";
 import { authenticateUser } from "../graphql";
 import { signIn, signOut } from "../../../helpers/auth";
 
-const LoginFormComposer = compose(
+export const LoginFormComposer = compose(
   graphql(authenticateUser),
   withState("formData", "setFormData", { email: "", password: "" }),
   withHandlers({
@@ -25,6 +25,6 @@ const LoginFormComposer = compose(
   }),
   displayLoadingState,
   pure
-)(LoginForm);
+);
 
-export default LoginFormComposer;
+export default LoginFormComposer(LoginForm);
