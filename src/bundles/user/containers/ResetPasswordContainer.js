@@ -5,7 +5,7 @@ import enhance from "../composers/ResetPasswordComposer";
 import "../../../css/sessions.css";
 
 const FormItem = Form.Item;
-const ResetPasswordContainer = ({
+export const ResetPasswordContainer = ({
   formData,
   setFormData,
   formErrors,
