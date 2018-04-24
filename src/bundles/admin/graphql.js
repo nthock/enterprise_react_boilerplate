@@ -2,7 +2,7 @@ import { gql } from "apollo-boost";
 import { AdminDataFragment } from "./fragment";
 
 export const adminListQuery = gql`
-  query {
+  query admins{
     admins {
       ...AdminData
     }

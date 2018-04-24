@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`when admins are fetched it should match snapshot 1`] = `
+Object {
+  "data": Object {
+    "admins": Array [
+      Object {
+        "admin": true,
+        "designation": null,
+        "email": "admin1@eg.com",
+        "id": 1,
+        "name": "admin1",
+        "status": "active",
+        "super_admin": false,
+      },
+      Object {
+        "admin": true,
+        "designation": null,
+        "email": "admin2@eg.com",
+        "id": 2,
+        "name": "admin2",
+        "status": "active",
+        "super_admin": false,
+      },
+    ],
+  },
+  "handleDelete": [Function],
+  "sendInvite": [Function],
+}
+`;
