@@ -8,7 +8,7 @@ const adminList = {
       status: "active",
       admin: true,
       super_admin: false,
-      errors: []
+      errors: [{ key: "error", message: "error message" }]
     },
     {
       id: 2,
@@ -31,9 +31,9 @@ const sendInviteMutate = {
     .mockReturnValueOnce(Promise.resolve({ data: { sendInvite: admin } }))
 };
 
-const mockData = {
+const errorMockData = {
   admins: adminList,
   sendInvite: sendInviteMutate
 };
 
-export default mockData;
+export default errorMockData;
