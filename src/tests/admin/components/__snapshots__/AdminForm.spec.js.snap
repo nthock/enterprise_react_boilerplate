@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AdminForm it should match snapshot 1`] = `
+<form
+  className="ant-form ant-form-vertical"
+  onSubmit={[Function]}
+>
+  <div
+    className="ant-row ant-form-item"
+    style={undefined}
+  >
+    <div
+      className="ant-form-item-label"
+    >
+      <label
+        className=""
+        htmlFor={null}
+        onClick={[Function]}
+        title="Name"
+      >
+        Name
+      </label>
+    </div>
+    <div
+      className="ant-form-item-control-wrapper"
+    >
+      <div
+        className="ant-form-item-control"
+      >
+        <span
+          className="ant-form-item-children"
+        >
+          <span
+            className="ant-input-affix-wrapper"
+            style={undefined}
+          >
+            <span
+              className="ant-input-prefix"
+            >
+              <i
+                className="anticon anticon-user"
+                style={
+                  Object {
+                    "fontSize": 13,
+                  }
+                }
+              />
+            </span>
+            <input
+              className="ant-input"
+              disabled={false}
+              onChange={[Function]}
+              onKeyDown={[Function]}
+              placeholder="Name"
+              style={null}
+              type="text"
+            />
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    className="ant-row ant-form-item"
+    style={undefined}
+  >
+    <div
+      className="ant-form-item-label"
+    >
+      <label
+        className=""
+        htmlFor={null}
+        onClick={[Function]}
+        title="Email"
+      >
+        Email
+      </label>
+    </div>
+    <div
+      className="ant-form-item-control-wrapper"
+    >
+      <div
+        className="ant-form-item-control"
+      >
+        <span
+          className="ant-form-item-children"
+        >
+          <span
+            className="ant-input-affix-wrapper"
+            style={undefined}
+          >
+            <span
+              className="ant-input-prefix"
+            >
+              <i
+                className="anticon anticon-mail"
+                style={
+                  Object {
+                    "fontSize": 13,
+                  }
+                }
+              />
+            </span>
+            <input
+              className="ant-input"
+              disabled={false}
+              onChange={[Function]}
+              onKeyDown={[Function]}
+              placeholder="Email"
+              style={null}
+              type="text"
+            />
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    className="dialog-form-btn-grp"
+  >
+    <button
+      className="ant-btn ant-btn-lg"
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        Cancel
+      </span>
+    </button>
+    <button
+      className="ant-btn save-btn ant-btn-primary ant-btn-lg"
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        Create Admin
+      </span>
+    </button>
+  </div>
+</form>
+`;

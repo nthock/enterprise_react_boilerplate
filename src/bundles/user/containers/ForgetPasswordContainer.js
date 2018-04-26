@@ -5,7 +5,7 @@ import enhance from "../composers/ForgotPasswordComposer";
 import "../../../css/sessions.css";
 
 const FormItem = Form.Item;
-const AcceptInvitationContainer = ({
+const ForgetPasswordContainer = ({
   formData,
   setFormData,
   formErrors,
@@ -57,7 +57,7 @@ const AcceptInvitationContainer = ({
   </div>
 );
 
-AcceptInvitationContainer.propTypes = {
+ForgetPasswordContainer.propTypes = {
   formData: PropTypes.shape({
     email: PropTypes.string
   }).isRequired,
@@ -69,4 +69,4 @@ AcceptInvitationContainer.propTypes = {
   submit: PropTypes.bool.isRequired
 };
 
-export default enhance(AcceptInvitationContainer);
+export default enhance(ForgetPasswordContainer);

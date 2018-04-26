@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ResetPasswordContainer it should match snapshot 1`] = `
+exports[`AcceptInvitationContainer it should match snapshot 1`] = `
 <div
   className="sign-up"
 >
   <h1
     className="title"
   >
-    Reset Password
+    Accept Invite
   </h1>
   <div
     className="signup-form"
@@ -123,7 +123,7 @@ exports[`ResetPasswordContainer it should match snapshot 1`] = `
                 type="submit"
               >
                 <span>
-                  Reset Password
+                  Proceed
                 </span>
               </button>
             </span>

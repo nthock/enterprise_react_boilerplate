@@ -1,6 +1,11 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import { ResetPasswordContainer } from "../../../bundles/user/containers/ResetPasswordContainer";
+import { AcceptInvitationContainer } from "../../../bundles/user/containers/AcceptInvitationContainer";
+
+const history = {
+  go: () => {},
+  push: () => {}
+};
 
 const handleSave = jest.fn();
 const setFormData = jest.fn();
@@ -18,9 +23,11 @@ const props = {
   }
 };
 
-describe("ResetPasswordContainer", () => {
+describe("AcceptInvitationContainer", () => {
   test("it should match snapshot", () => {
-    const component = renderer.create(<ResetPasswordContainer {...props} />);
+    const component = renderer.create(
+      <AcceptInvitationContainer history={history} {...props} />
+    );
 
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();

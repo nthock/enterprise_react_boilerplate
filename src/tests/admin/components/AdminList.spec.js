@@ -1,34 +1,32 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import { shallow } from "enzyme";
+// import { shallow } from "enzyme";
 import { MemoryRouter } from "react-router";
-import SignUpForm from "../../../bundles/user/components/SignUpForm";
+import AdminList from "../../../bundles/admin/components/AdminList";
+import { adminList } from "../../../../__mocks__/mockData";
 
-const handleSave = jest.fn();
-const setFormData = jest.fn();
+const handleDelete = jest.fn();
+const sendInvite = jest.fn();
 
 const props = {
-  handleSave,
-  setFormData,
+  data: adminList,
+  handleDelete,
+  sendInvite,
   formData: {
     name: "",
-    email: "",
-    password: "",
-    password_confirmation: ""
+    email: ""
   },
   formErrors: {
     name: "",
-    email: "",
-    password: "",
-    password_confirmation: ""
+    email: ""
   }
 };
 
-describe("SignUpForm", () => {
+describe("AdminList", () => {
   test("it should match snapshot", () => {
     const component = renderer.create(
       <MemoryRouter>
-        <SignUpForm {...props} />
+        <AdminList {...props} />
       </MemoryRouter>
     );
 
