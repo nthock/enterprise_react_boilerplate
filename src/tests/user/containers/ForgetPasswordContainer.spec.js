@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import { AcceptInvitationContainer } from "../../../bundles/user/containers/AcceptInvitationContainer";
+import { ForgetPasswordContainer } from "../../../bundles/user/containers/ForgetPasswordContainer";
 
 const history = {
   go: () => {},
@@ -9,29 +9,38 @@ const history = {
 
 const handleSave = jest.fn();
 const setFormData = jest.fn();
-const submit = jest.fn();
 
 const props = {
   handleSave,
   setFormData,
-  submit,
   formData: {
-    password: "",
-    password_confirmation: ""
+    email: ""
   },
   formErrors: {
-    password: "",
-    password_confirmation: ""
+    email: ""
   }
 };
 
 describe("ForgetPasswordContainer", () => {
-  test("it should match snapshot", () => {
-    const component = renderer.create(
-      <AcceptInvitationContainer history={history} {...props} />
-    );
+  describe("when submit is false", () => {
+    test("it should match snapshot", () => {
+      const component = renderer.create(
+        <ForgetPasswordContainer history={history} submit={false} {...props} />
+      );
 
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+      const tree = component.toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+  });
+
+  describe("when submit is true", () => {
+    test("it should match snapshot", () => {
+      const component = renderer.create(
+        <ForgetPasswordContainer history={history} submit {...props} />
+      );
+
+      const tree = component.toJSON();
+      expect(tree).toMatchSnapshot();
+    });
   });
 });

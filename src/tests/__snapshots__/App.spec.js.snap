@@ -1,21 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ForgetPasswordContainer when submit is false it should match snapshot 1`] = `
-<div
-  className="sign-up"
->
-  <h1
-    className="title"
-  >
-    Forgot Pasword?
-  </h1>
+exports[`AcceptInvitationContainer it should match snapshot 1`] = `
+<div>
   <div
-    className="signup-form"
+    className="login-page"
   >
-    <div>
-      <p>
-        Please key in your email that you signed up below
-      </p>
+    <h1
+      className="title"
+    >
+      Log in
+    </h1>
+    <div
+      className="login-form"
+    >
       <form
         className="ant-form ant-form-horizontal"
         onSubmit={[Function]}
@@ -52,6 +49,7 @@ exports[`ForgetPasswordContainer when submit is false it should match snapshot 1
                   <input
                     className="ant-input"
                     disabled={false}
+                    id="email-field"
                     name="Email"
                     onChange={[Function]}
                     onKeyDown={[Function]}
@@ -77,41 +75,82 @@ exports[`ForgetPasswordContainer when submit is false it should match snapshot 1
               <span
                 className="ant-form-item-children"
               >
+                <span
+                  className="ant-input-affix-wrapper"
+                  style={undefined}
+                >
+                  <span
+                    className="ant-input-prefix"
+                  >
+                    <i
+                      className="anticon anticon-lock"
+                      style={
+                        Object {
+                          "fontSize": 13,
+                        }
+                      }
+                    />
+                  </span>
+                  <input
+                    className="ant-input"
+                    disabled={false}
+                    id="password-field"
+                    name="Password"
+                    onChange={[Function]}
+                    onKeyDown={[Function]}
+                    placeholder="Password"
+                    style={null}
+                    type="password"
+                  />
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ant-row ant-form-item"
+          style={undefined}
+        >
+          <div
+            className="ant-form-item-control-wrapper"
+          >
+            <div
+              className="ant-form-item-control"
+            >
+              <span
+                className="ant-form-item-children"
+              >
                 <button
                   className="ant-btn login-form-button ant-btn-primary"
                   onClick={[Function]}
                   type="submit"
                 >
                   <span>
-                    Send Reset Password Instructions
+                    Log in
                   </span>
                 </button>
+                <div
+                  className="form-footer"
+                >
+                  <a
+                    href="/forget_password"
+                    onClick={[Function]}
+                  >
+                    Forgot password?
+                  </a>
+                  <br />
+                  <a
+                    href="/signup"
+                    onClick={[Function]}
+                  >
+                    Do not have account? Sign up here
+                  </a>
+                </div>
               </span>
             </div>
           </div>
         </div>
       </form>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`ForgetPasswordContainer when submit is true it should match snapshot 1`] = `
-<div
-  className="sign-up"
->
-  <h1
-    className="title"
-  >
-    Forgot Pasword?
-  </h1>
-  <div
-    className="signup-form"
-  >
-    <div>
-      <p>
-        We have sent the reset password email to you. Please check your mailbox
-      </p>
     </div>
   </div>
 </div>
