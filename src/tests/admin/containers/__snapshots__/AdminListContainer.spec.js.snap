@@ -218,7 +218,7 @@ exports[`it should match snapshot 1`] = `
                         className=""
                         onClick={[Function]}
                       >
-                        active
+                        invited
                       </td>
                       <td
                         className=""
@@ -234,6 +234,18 @@ exports[`it should match snapshot 1`] = `
                             >
                               <span>
                                 Delete User
+                              </span>
+                            </button>
+                          </span>
+                          <span>
+                            <button
+                              className="ant-btn ant-btn-primary ml-10"
+                              id="invite-admin-2"
+                              onClick={[Function]}
+                              type="button"
+                            >
+                              <span>
+                                Send Invitation Again
                               </span>
                             </button>
                           </span>

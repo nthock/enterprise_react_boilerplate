@@ -15,7 +15,7 @@ export const adminList = {
       name: "admin2",
       email: "admin2@eg.com",
       designation: null,
-      status: "active",
+      status: "invited",
       admin: true,
       super_admin: false,
       errors: []

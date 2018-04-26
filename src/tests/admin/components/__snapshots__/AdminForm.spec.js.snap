@@ -49,6 +49,7 @@ exports[`AdminForm it should match snapshot 1`] = `
             <input
               className="ant-input"
               disabled={false}
+              id="nameField"
               onChange={[Function]}
               onKeyDown={[Function]}
               placeholder="Name"
@@ -104,6 +105,7 @@ exports[`AdminForm it should match snapshot 1`] = `
             <input
               className="ant-input"
               disabled={false}
+              id="emailField"
               onChange={[Function]}
               onKeyDown={[Function]}
               placeholder="Email"
@@ -120,6 +122,7 @@ exports[`AdminForm it should match snapshot 1`] = `
   >
     <button
       className="ant-btn ant-btn-lg"
+      id="closeAdminModal"
       onClick={[Function]}
       type="button"
     >
@@ -129,6 +132,7 @@ exports[`AdminForm it should match snapshot 1`] = `
     </button>
     <button
       className="ant-btn save-btn ant-btn-primary ant-btn-lg"
+      id="addAdminBtn"
       onClick={[Function]}
       type="button"
     >

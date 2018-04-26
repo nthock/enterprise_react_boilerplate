@@ -21,7 +21,7 @@ Object {
         "errors": Array [],
         "id": 2,
         "name": "admin2",
-        "status": "active",
+        "status": "invited",
         "super_admin": false,
       },
     ],

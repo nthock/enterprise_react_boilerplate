@@ -36,10 +36,6 @@ describe("LoginForm", () => {
     });
 
     describe("Filling and submitting form", () => {
-      beforeEach(() => {
-        wrapper = shallow(<LoginForm {...props} />);
-      });
-
       afterEach(() => {
         setFormData.mockClear();
       });
