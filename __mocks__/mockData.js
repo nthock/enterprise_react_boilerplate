@@ -57,6 +57,14 @@ export const sendInviteMutate = {
     .mockReturnValueOnce(Promise.resolve({ data: { sendInvite: admin } }))
 };
 
+export const addAdminMutate = {
+  mutate: jest.fn().mockReturnValueOnce(Promise.resolve({ data: { addAdmin: admin } }))
+}
+
+export const createUserMutate = {
+  mutate: jest.fn().mockReturnValueOnce(Promise.resolve({ data: { create_user: user } }))
+}
+
 export const authenticateUserMutate = {
   mutate: jest
     .fn()
@@ -66,7 +74,9 @@ export const authenticateUserMutate = {
 const mockData = {
   admins: adminList,
   sendInvite: sendInviteMutate,
-  authenticateUser: authenticateUserMutate
+  authenticateUser: authenticateUserMutate,
+  addAdmin: addAdminMutate,
+  createUser: createUserMutate
 };
 
 export default mockData;
