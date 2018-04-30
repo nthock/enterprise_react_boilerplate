@@ -7,6 +7,7 @@ import { signIn } from "../../../helpers/auth";
 const ResetPasswordComposer = compose(
   graphql(resetForgotPasswordQuery),
   withState("formData", "setFormData", () => {
+    console.log('window', new URL(window.location.href)); 
     const reset_password_token = new URL(window.location.href).searchParams.get(
       "token"
     );

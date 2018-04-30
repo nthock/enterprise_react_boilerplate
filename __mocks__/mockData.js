@@ -58,12 +58,28 @@ export const sendInviteMutate = {
 };
 
 export const addAdminMutate = {
-  mutate: jest.fn().mockReturnValueOnce(Promise.resolve({ data: { addAdmin: admin } }))
-}
+  mutate: jest
+    .fn()
+    .mockReturnValueOnce(Promise.resolve({ data: { addAdmin: admin } }))
+};
 
 export const createUserMutate = {
-  mutate: jest.fn().mockReturnValueOnce(Promise.resolve({ data: { create_user: user } }))
-}
+  mutate: jest
+    .fn()
+    .mockReturnValueOnce(Promise.resolve({ data: { create_user: user } }))
+};
+
+export const forgetPasswordMutate = {
+  mutate: jest.fn().mockReturnValueOnce()
+};
+
+export const resetForgotPasswordMutate = {
+  mutate: jest
+    .fn()
+    .mockReturnValueOnce(
+      Promise.resolve({ data: { resetForgotPassword: user } })
+    )
+};
 
 export const authenticateUserMutate = {
   mutate: jest
@@ -76,7 +92,9 @@ const mockData = {
   sendInvite: sendInviteMutate,
   authenticateUser: authenticateUserMutate,
   addAdmin: addAdminMutate,
-  createUser: createUserMutate
+  createUser: createUserMutate,
+  forgetPassword: forgetPasswordMutate,
+  resetForgotPassword: resetForgotPasswordMutate
 };
 
 export default mockData;

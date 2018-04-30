@@ -1,84 +1,76 @@
 import React from "react";
 import { mount } from "enzyme";
-import SignUpFormComposer from "../../../bundles/user/composers/SignUpFormComposer";
-
-const historyPush = jest.fn();
-
-const history = {
-  push: historyPush
-};
+import ForgotPasswordComposer from "../../../bundles/user/composers/ForgotPasswordComposer";
 
 const EmptyComponent = () => null;
-const EnhancedComponent = SignUpFormComposer(props => (
+const EnhancedComponent = ForgotPasswordComposer(props => (
   <EmptyComponent {...props} />
 ));
 
-describe("SignUpFormComposer", () => {
+describe("ForgotPasswordComposer", () => {
   let wrapper;
   let enhancedComponent;
 
   beforeEach(() => {
-    wrapper = mount(<EnhancedComponent history={history} />);
+    wrapper = mount(<EnhancedComponent />);
     enhancedComponent = wrapper.find(EmptyComponent);
   });
 
-  test("it should return the default formData of empty name, email, pw and pw confirmation", () => {
+  test("it should return the default formData of empty email", () => {
     const { formData } = enhancedComponent.props();
     expect(formData).toEqual({
-      name: "",
-      email: "",
-      password: "",
-      password_confirmation: ""
+      email: ""
     });
   });
 
   test("it should update the formData when call setFormData", () => {
     const { setFormData } = enhancedComponent.props();
-    const userSignUp = {
-      name: "bob",
-      email: "bb@bb.com",
-      password: "secret",
-      password_confirmation: "secret"
+    const userForgotPassword = {
+      email: "bb@bb.com"
     };
-    setFormData(userSignUp);
+    setFormData(userForgotPassword);
 
     wrapper.update();
-    expect(wrapper.find(EmptyComponent).props().formData).toEqual(userSignUp);
+    expect(wrapper.find(EmptyComponent).props().formData).toEqual(
+      userForgotPassword
+    );
   });
 
   test("it should return the default formErrors of empty name, email, pw and pw confirmation", () => {
     const { formErrors } = enhancedComponent.props();
     expect(formErrors).toEqual({
-      name: "",
-      email: "",
-      password: "",
-      password_confirmation: ""
+      email: ""
     });
   });
 
   test("it should update the formData when call setFormData", () => {
     const { setFormErrors } = enhancedComponent.props();
-    const userSignUpErrors = {
-      name: "must be present",
-      email: "must be present",
-      password: "must be present",
-      password_confirmation: "must be present"
+    const userForgotPasswordError = {
+      email: "must be present"
     };
-    setFormErrors(userSignUpErrors);
+    setFormErrors(userForgotPasswordError);
 
     wrapper.update();
     expect(wrapper.find(EmptyComponent).props().formErrors).toEqual(
-      userSignUpErrors
+      userForgotPasswordError
     );
+  });
+
+  test("it should set the formError when the email is invalid", () => {
+    const { handleSave, setFormData } = enhancedComponent.props();
+    setFormData({ email: "bbbbb" });
+    wrapper.update();
+    handleSave();
+    wrapper.update();
+    expect(wrapper.find(EmptyComponent).props().formErrors).toEqual({
+      email: "Invalid Email"
+    });
   });
 
   test("it should call the mutate function when call handleSave", () => {
     const { handleSave, setFormData, mutate } = enhancedComponent.props();
     const user = {
-      name: "bob",
-      email: "bb@bb.com",
-      password: "secret",
-      password_confirmation: "secret"
+      email: "bb@bb.com"
     };
     setFormData(user);
     handleSave();
