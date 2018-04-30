@@ -1,21 +1,65 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`LoginContainer it should match snapshot 1`] = `
+exports[`SignUpContainer it should match snapshot 1`] = `
 <div
-  className="login-page"
+  className="sign-up"
 >
   <h1
     className="title"
   >
-    Log in
+    Sign Up
   </h1>
   <div
-    className="login-form"
+    className="signup-form"
   >
     <form
       className="ant-form ant-form-horizontal"
       onSubmit={[Function]}
     >
+      <div
+        className="ant-row ant-form-item"
+        style={undefined}
+      >
+        <div
+          className="ant-form-item-control-wrapper"
+        >
+          <div
+            className="ant-form-item-control"
+          >
+            <span
+              className="ant-form-item-children"
+            >
+              <span
+                className="ant-input-affix-wrapper"
+                style={undefined}
+              >
+                <span
+                  className="ant-input-prefix"
+                >
+                  <i
+                    className="anticon anticon-user"
+                    style={
+                      Object {
+                        "fontSize": 13,
+                      }
+                    }
+                  />
+                </span>
+                <input
+                  className="ant-input"
+                  disabled={false}
+                  name="Name"
+                  onChange={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Name"
+                  style={null}
+                  type="text"
+                />
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
       <div
         className="ant-row ant-form-item"
         style={undefined}
@@ -48,7 +92,6 @@ exports[`LoginContainer it should match snapshot 1`] = `
                 <input
                   className="ant-input"
                   disabled={false}
-                  id="email-field"
                   name="Email"
                   onChange={[Function]}
                   onKeyDown={[Function]}
@@ -93,11 +136,54 @@ exports[`LoginContainer it should match snapshot 1`] = `
                 <input
                   className="ant-input"
                   disabled={false}
-                  id="password-field"
                   name="Password"
                   onChange={[Function]}
                   onKeyDown={[Function]}
                   placeholder="Password"
+                  style={null}
+                  type="password"
+                />
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ant-row ant-form-item"
+        style={undefined}
+      >
+        <div
+          className="ant-form-item-control-wrapper"
+        >
+          <div
+            className="ant-form-item-control"
+          >
+            <span
+              className="ant-form-item-children"
+            >
+              <span
+                className="ant-input-affix-wrapper"
+                style={undefined}
+              >
+                <span
+                  className="ant-input-prefix"
+                >
+                  <i
+                    className="anticon anticon-lock"
+                    style={
+                      Object {
+                        "fontSize": 13,
+                      }
+                    }
+                  />
+                </span>
+                <input
+                  className="ant-input"
+                  disabled={false}
+                  name="Password Confirmation"
+                  onChange={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Password Confirmation"
                   style={null}
                   type="password"
                 />
@@ -125,24 +211,16 @@ exports[`LoginContainer it should match snapshot 1`] = `
                 type="submit"
               >
                 <span>
-                  Log in
+                  Sign Up
                 </span>
               </button>
               <div
                 className="form-footer"
               >
                 <a
-                  href="/forget_password"
-                  onClick={[Function]}
+                  href="/"
                 >
-                  Forgot password?
-                </a>
-                <br />
-                <a
-                  href="/signup"
-                  onClick={[Function]}
-                >
-                  Do not have account? Sign up here
+                  Have an account? Login here
                 </a>
               </div>
             </span>

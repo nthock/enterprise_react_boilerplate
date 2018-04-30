@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation it should match snapshot 1`] = `
+<div
+  className="main-layout ant-layout ant-layout-has-sider"
+>
+  <div
+    className="ant-layout-sider"
+    style={
+      Object {
+        "flex": "0 0 200px",
+        "maxWidth": "200px",
+        "minWidth": "200px",
+        "width": "200px",
+      }
+    }
+  >
+    <div
+      className="ant-layout-sider-children"
+    >
+      <div
+        className="avatar"
+      >
+        <span
+          className="ant-avatar ant-avatar-lg ant-avatar-circle ant-avatar-image"
+        >
+          <img
+            onError={[Function]}
+            src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=80"
+          />
+        </span>
+      </div>
+      <ul
+        aria-activedescendant=""
+        className="ant-menu ant-menu-dark ant-menu-root ant-menu-inline"
+        onKeyDown={[Function]}
+        role="menu"
+        style={Object {}}
+        tabIndex="0"
+      >
+        <li
+          aria-disabled={undefined}
+          aria-selected={false}
+          className="ant-menu-item"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          role="menuitem"
+          style={
+            Object {
+              "paddingLeft": 24,
+            }
+          }
+          title={undefined}
+        >
+          <a
+            href="/dashboard/"
+            onClick={[Function]}
+          >
+            <i
+              className="anticon anticon-home"
+            />
+            <span>
+              Dashboard
+            </span>
+          </a>
+        </li>
+        <li
+          aria-disabled={undefined}
+          aria-selected={false}
+          className="ant-menu-item"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          role="menuitem"
+          style={
+            Object {
+              "paddingLeft": 24,
+            }
+          }
+          title={undefined}
+        >
+          <a
+            href="/dashboard/organisations"
+            onClick={[Function]}
+          >
+            <i
+              className="anticon anticon-rocket"
+            />
+            <span>
+              Organisations
+            </span>
+          </a>
+        </li>
+        <li
+          className="ant-menu-submenu ant-menu-submenu-inline"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={undefined}
+        >
+          <div
+            aria-expanded={false}
+            aria-haspopup="true"
+            aria-owns="sub1$Menu"
+            className="ant-menu-submenu-title"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "paddingLeft": 24,
+              }
+            }
+            title={undefined}
+          >
+            <span>
+              <i
+                className="anticon anticon-global"
+              />
+              <span>
+                Menu
+              </span>
+            </span>
+            <i
+              className="ant-menu-submenu-arrow"
+            />
+          </div>
+        </li>
+        <li
+          aria-disabled={undefined}
+          aria-selected={false}
+          className="ant-menu-item"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          role="menuitem"
+          style={
+            Object {
+              "paddingLeft": 24,
+            }
+          }
+          title={undefined}
+        >
+          <button
+            className="invisible"
+            onClick={[Function]}
+          >
+            <i
+              className="anticon anticon-logout"
+            />
+            <span>
+              Log Out
+            </span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="ant-layout"
+  >
+    <div
+      className="ant-layout-header"
+      style={
+        Object {
+          "background": "#fff",
+          "padding": 0,
+        }
+      }
+    >
+      <i
+        className="anticon anticon-menu-fold trigger"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="ant-layout-content"
+      style={
+        Object {
+          "background": "#fff",
+          "margin": "24px 16px",
+          "minHeight": 280,
+          "padding": 24,
+        }
+      }
+    >
+      <div>
+        Dummy Content
+      </div>
+    </div>
+  </div>
+</div>
+`;

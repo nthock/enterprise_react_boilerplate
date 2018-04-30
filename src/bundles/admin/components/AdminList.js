@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Table, Button } from "antd";
 import enhance from "../composers/AdminListComposer";
 
-const AdminList = props => {
+export const AdminList = props => {
   const {
     data: { admins },
     handleDelete,

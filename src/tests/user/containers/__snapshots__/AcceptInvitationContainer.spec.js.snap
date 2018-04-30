@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`LoginContainer it should match snapshot 1`] = `
+exports[`AcceptInvitationContainer it should match snapshot 1`] = `
 <div
-  className="login-page"
+  className="sign-up"
 >
   <h1
     className="title"
   >
-    Log in
+    Accept Invite
   </h1>
   <div
-    className="login-form"
+    className="signup-form"
   >
     <form
       className="ant-form ant-form-horizontal"
@@ -37,7 +37,7 @@ exports[`LoginContainer it should match snapshot 1`] = `
                   className="ant-input-prefix"
                 >
                   <i
-                    className="anticon anticon-mail"
+                    className="anticon anticon-lock"
                     style={
                       Object {
                         "fontSize": 13,
@@ -48,13 +48,12 @@ exports[`LoginContainer it should match snapshot 1`] = `
                 <input
                   className="ant-input"
                   disabled={false}
-                  id="email-field"
-                  name="Email"
+                  name="Password"
                   onChange={[Function]}
                   onKeyDown={[Function]}
-                  placeholder="Email"
+                  placeholder="Password"
                   style={null}
-                  type="text"
+                  type="password"
                 />
               </span>
             </span>
@@ -93,11 +92,10 @@ exports[`LoginContainer it should match snapshot 1`] = `
                 <input
                   className="ant-input"
                   disabled={false}
-                  id="password-field"
-                  name="Password"
+                  name="Password Confirmation"
                   onChange={[Function]}
                   onKeyDown={[Function]}
-                  placeholder="Password"
+                  placeholder="Password Confirmation"
                   style={null}
                   type="password"
                 />
@@ -125,26 +123,9 @@ exports[`LoginContainer it should match snapshot 1`] = `
                 type="submit"
               >
                 <span>
-                  Log in
+                  Proceed
                 </span>
               </button>
-              <div
-                className="form-footer"
-              >
-                <a
-                  href="/forget_password"
-                  onClick={[Function]}
-                >
-                  Forgot password?
-                </a>
-                <br />
-                <a
-                  href="/signup"
-                  onClick={[Function]}
-                >
-                  Do not have account? Sign up here
-                </a>
-              </div>
             </span>
           </div>
         </div>

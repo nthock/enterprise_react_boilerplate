@@ -5,7 +5,7 @@ import enhance from "../composers/AcceptInvitationComposer";
 import "../../../css/sessions.css";
 
 const FormItem = Form.Item;
-const AcceptInvitationContainer = ({
+export const AcceptInvitationContainer = ({
   formData,
   setFormData,
   formErrors,

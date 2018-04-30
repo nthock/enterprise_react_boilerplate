@@ -1,0 +1,306 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it should match snapshot 1`] = `
+<div>
+  <h1>
+    All Admins
+  </h1>
+  <button
+    className="ant-btn ant-btn-primary"
+    onClick={[Function]}
+    type="button"
+  >
+    <span>
+      Add Admin
+    </span>
+  </button>
+  <div
+    className="mt-20"
+  >
+    <div
+      className="ant-table-wrapper"
+      style={undefined}
+    >
+      <div
+        className="ant-spin-nested-loading"
+        style={null}
+      >
+        <div
+          className="ant-spin-container"
+        >
+          <div
+            className="ant-table ant-table-large ant-table-scroll-position-left"
+            id={undefined}
+            style={Object {}}
+          >
+            <div
+              className="ant-table-content"
+            >
+              <div
+                className="ant-table-body"
+                onScroll={[Function]}
+                style={Object {}}
+              >
+                <table
+                  className=""
+                  style={Object {}}
+                >
+                  <colgroup>
+                    <col
+                      style={
+                        Object {
+                          "minWidth": undefined,
+                          "width": undefined,
+                        }
+                      }
+                    />
+                    <col
+                      style={
+                        Object {
+                          "minWidth": undefined,
+                          "width": undefined,
+                        }
+                      }
+                    />
+                    <col
+                      style={
+                        Object {
+                          "minWidth": undefined,
+                          "width": undefined,
+                        }
+                      }
+                    />
+                    <col
+                      style={
+                        Object {
+                          "minWidth": undefined,
+                          "width": undefined,
+                        }
+                      }
+                    />
+                  </colgroup>
+                  <thead
+                    className="ant-table-thead"
+                  >
+                    <tr
+                      style={
+                        Object {
+                          "height": null,
+                        }
+                      }
+                    >
+                      <th
+                        className=""
+                      >
+                        <span>
+                          Name
+                        </span>
+                      </th>
+                      <th
+                        className=""
+                      >
+                        <span>
+                          Email
+                        </span>
+                      </th>
+                      <th
+                        className=""
+                      >
+                        <span>
+                          Status
+                        </span>
+                      </th>
+                      <th
+                        className=""
+                      >
+                        <span>
+                          Action
+                        </span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody
+                    className="ant-table-tbody"
+                  >
+                    <tr
+                      className="ant-table-row  ant-table-row-level-0"
+                      onClick={[Function]}
+                      onContextMenu={[Function]}
+                      onDoubleClick={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                      style={
+                        Object {
+                          "height": null,
+                        }
+                      }
+                    >
+                      <td
+                        className=""
+                        onClick={[Function]}
+                      >
+                        <span
+                          className="ant-table-row-indent indent-level-0"
+                          style={
+                            Object {
+                              "paddingLeft": "0px",
+                            }
+                          }
+                        />
+                        admin1
+                      </td>
+                      <td
+                        className=""
+                        onClick={[Function]}
+                      >
+                        admin1@eg.com
+                      </td>
+                      <td
+                        className=""
+                        onClick={[Function]}
+                      >
+                        active
+                      </td>
+                      <td
+                        className=""
+                        onClick={[Function]}
+                      >
+                        <div>
+                          <span>
+                            <button
+                              className="ant-btn ant-btn-danger"
+                              id="delete-admin-1"
+                              onClick={[Function]}
+                              type="button"
+                            >
+                              <span>
+                                Delete User
+                              </span>
+                            </button>
+                          </span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr
+                      className="ant-table-row  ant-table-row-level-0"
+                      onClick={[Function]}
+                      onContextMenu={[Function]}
+                      onDoubleClick={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                      style={
+                        Object {
+                          "height": null,
+                        }
+                      }
+                    >
+                      <td
+                        className=""
+                        onClick={[Function]}
+                      >
+                        <span
+                          className="ant-table-row-indent indent-level-0"
+                          style={
+                            Object {
+                              "paddingLeft": "0px",
+                            }
+                          }
+                        />
+                        admin2
+                      </td>
+                      <td
+                        className=""
+                        onClick={[Function]}
+                      >
+                        admin2@eg.com
+                      </td>
+                      <td
+                        className=""
+                        onClick={[Function]}
+                      >
+                        invited
+                      </td>
+                      <td
+                        className=""
+                        onClick={[Function]}
+                      >
+                        <div>
+                          <span>
+                            <button
+                              className="ant-btn ant-btn-danger"
+                              id="delete-admin-2"
+                              onClick={[Function]}
+                              type="button"
+                            >
+                              <span>
+                                Delete User
+                              </span>
+                            </button>
+                          </span>
+                          <span>
+                            <button
+                              className="ant-btn ant-btn-primary ml-10"
+                              id="invite-admin-2"
+                              onClick={[Function]}
+                              type="button"
+                            >
+                              <span>
+                                Send Invitation Again
+                              </span>
+                            </button>
+                          </span>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <ul
+            className="ant-pagination ant-table-pagination"
+            style={Object {}}
+            unselectable="unselectable"
+          >
+            <li
+              aria-disabled={true}
+              className="ant-pagination-disabled ant-pagination-prev"
+              onClick={[Function]}
+              onKeyPress={[Function]}
+              tabIndex="0"
+              title="Previous Page"
+            >
+              <a
+                className="ant-pagination-item-link"
+              />
+            </li>
+            <li
+              className="ant-pagination-item ant-pagination-item-1 ant-pagination-item-active"
+              onClick={[Function]}
+              onKeyPress={[Function]}
+              tabIndex="0"
+              title={1}
+            >
+              <a>
+                1
+              </a>
+            </li>
+            <li
+              aria-disabled={true}
+              className="ant-pagination-disabled ant-pagination-next"
+              onClick={[Function]}
+              onKeyPress={[Function]}
+              tabIndex="0"
+              title="Next Page"
+            >
+              <a
+                className="ant-pagination-item-link"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

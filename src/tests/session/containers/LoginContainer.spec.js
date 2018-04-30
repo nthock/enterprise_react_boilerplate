@@ -10,23 +10,25 @@ const history = {
   push: () => {}
 };
 
-test("it should match snapshot", () => {
-  const component = renderer.create(
-    <MemoryRouter>
-      <LoginContainer history={history} />
-    </MemoryRouter>
-  );
+describe("LoginContainer", () => {
+  test("it should match snapshot", () => {
+    const component = renderer.create(
+      <MemoryRouter>
+        <LoginContainer history={history} />
+      </MemoryRouter>
+    );
 
-  const tree = component.toJSON();
-  expect(tree).toMatchSnapshot();
-});
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 
-test("it should have the h1 element with the name 'Log in'", () => {
-  const wrapper = shallow(<LoginContainer history={history} />);
-  expect(wrapper.find("h1").text()).toEqual("Log in");
-});
+  test("it should have the h1 element with the name 'Log in'", () => {
+    const wrapper = shallow(<LoginContainer history={history} />);
+    expect(wrapper.find("h1").text()).toEqual("Log in");
+  });
 
-test("it should contain the LoginFormComposer as LoginForm", () => {
-  const wrapper = shallow(<LoginContainer history={history} />);
-  expect(wrapper.find(LoginForm).length).toEqual(1);
+  test("it should contain the LoginFormComposer as LoginForm", () => {
+    const wrapper = shallow(<LoginContainer history={history} />);
+    expect(wrapper.find(LoginForm).length).toEqual(1);
+  });
 });

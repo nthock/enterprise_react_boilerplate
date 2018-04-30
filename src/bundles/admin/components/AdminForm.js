@@ -5,7 +5,7 @@ import enhance from "../composers/AdminFormComposer";
 
 const FormItem = Form.Item;
 
-const AdminForm = props => {
+export const AdminForm = props => {
   const { formData, setFormData, formErrors, handleSave, handleClose } = props;
 
   return (
@@ -19,6 +19,7 @@ const AdminForm = props => {
         <Input
           prefix={<Icon type="user" style={{ fontSize: 13 }} />}
           placeholder="Name"
+          id="nameField"
           onChange={e => setFormData({ ...formData, name: e.target.value })}
         />
       </FormItem>
@@ -30,17 +31,19 @@ const AdminForm = props => {
       >
         <Input
           prefix={<Icon type="mail" style={{ fontSize: 13 }} />}
+          id="emailField"
           placeholder="Email"
           onChange={e => setFormData({ ...formData, email: e.target.value })}
         />
       </FormItem>
       <div className="dialog-form-btn-grp">
-        <Button size="large" onClick={handleClose}>
+        <Button size="large" id="closeAdminModal" onClick={handleClose}>
           Cancel
         </Button>
         <Button
           type="primary"
           className="save-btn"
+          id="addAdminBtn"
           size="large"
           onClick={handleSave}
         >

@@ -1,0 +1,2542 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dialog it should match snapshot 1`] = `
+<div>
+  <div
+    Dialog={
+      Dialog {
+        "_reactInternalFiber": FiberNode {
+          "_debugID": 3,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": null,
+          "_debugSource": Object {
+            "fileName": "/Users/nthock/Documents/Projects/enterprise/boilerplate/frontend_react/src/tests/shared/Dialog.spec.js",
+            "lineNumber": 8,
+          },
+          "alternate": null,
+          "child": FiberNode {
+            "_debugID": 4,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": [Circular],
+            "_debugSource": Object {
+              "fileName": "/Users/nthock/Documents/Projects/enterprise/boilerplate/frontend_react/src/shared/Dialog.js",
+              "lineNumber": 26,
+            },
+            "alternate": null,
+            "child": FiberNode {
+              "_debugID": 5,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "alternate": null,
+              "child": FiberNode {
+                "_debugID": 7,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": null,
+                "_debugSource": Object {
+                  "fileName": "/Users/nthock/Documents/Projects/enterprise/boilerplate/frontend_react/src/tests/shared/Dialog.spec.js",
+                  "lineNumber": 9,
+                },
+                "alternate": null,
+                "child": FiberNode {
+                  "_debugID": 8,
+                  "_debugIsCurrentlyTiming": false,
+                  "_debugOwner": null,
+                  "_debugSource": null,
+                  "alternate": null,
+                  "child": null,
+                  "effectTag": 0,
+                  "expirationTime": 0,
+                  "firstEffect": null,
+                  "index": 0,
+                  "key": null,
+                  "lastEffect": null,
+                  "memoizedProps": "Dummy Content",
+                  "memoizedState": null,
+                  "mode": 0,
+                  "nextEffect": null,
+                  "pendingProps": "Dummy Content",
+                  "ref": null,
+                  "return": [Circular],
+                  "sibling": null,
+                  "stateNode": Object {
+                    "tag": "TEXT",
+                    "text": "Dummy Content",
+                  },
+                  "tag": 6,
+                  "type": null,
+                  "updateQueue": null,
+                },
+                "effectTag": 0,
+                "expirationTime": 0,
+                "firstEffect": null,
+                "index": 0,
+                "key": ".0",
+                "lastEffect": null,
+                "memoizedProps": Object {
+                  "Dialog": [Circular],
+                  "children": "Dummy Content",
+                },
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": Object {
+                  "Dialog": [Circular],
+                  "children": "Dummy Content",
+                },
+                "ref": null,
+                "return": [Circular],
+                "sibling": null,
+                "stateNode": Object {
+                  "children": Array [
+                    Object {
+                      "tag": "TEXT",
+                      "text": "Dummy Content",
+                    },
+                  ],
+                  "props": Object {
+                    "Dialog": [Circular],
+                    "children": "Dummy Content",
+                  },
+                  "rootContainerInstance": Object {
+                    "children": Array [
+                      Object {
+                        "children": Array [
+                          [Circular],
+                        ],
+                        "props": Object {
+                          "children": Array [
+                            Array [
+                              <div
+                                Dialog={[Circular]}
+      >
+                                Dummy Content
+      </div>,
+                            ],
+                            <Modal
+                              cancelText="Cancel"
+                              confirmLoading={false}
+                              footer={null}
+                              maskTransitionName="fade"
+                              okText="Ok"
+                              okType="primary"
+                              onCancel={[Function]}
+                              onOk={[Function]}
+                              prefixCls="ant-modal"
+                              title=""
+                              transitionName="zoom"
+                              visible={false}
+                              width={520}
+      />,
+                          ],
+                        },
+                        "rootContainerInstance": [Circular],
+                        "tag": "INSTANCE",
+                        "type": "div",
+                      },
+                    ],
+                    "createNodeMock": [Function],
+                    "tag": "CONTAINER",
+                  },
+                  "tag": "INSTANCE",
+                  "type": "div",
+                },
+                "tag": 5,
+                "type": "div",
+                "updateQueue": null,
+              },
+              "effectTag": 0,
+              "expirationTime": 0,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Array [
+                <div
+                  Dialog={[Circular]}
+      >
+                  Dummy Content
+      </div>,
+              ],
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": Array [
+                <div
+                  Dialog={[Circular]}
+      >
+                  Dummy Content
+      </div>,
+              ],
+              "ref": null,
+              "return": [Circular],
+              "sibling": FiberNode {
+                "_debugID": 6,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": [Circular],
+                "_debugSource": Object {
+                  "fileName": "/Users/nthock/Documents/Projects/enterprise/boilerplate/frontend_react/src/shared/Dialog.js",
+                  "lineNumber": 28,
+                },
+                "alternate": null,
+                "child": FiberNode {
+                  "_debugID": 9,
+                  "_debugIsCurrentlyTiming": false,
+                  "_debugOwner": [Circular],
+                  "_debugSource": null,
+                  "alternate": null,
+                  "child": null,
+                  "effectTag": 1,
+                  "expirationTime": 0,
+                  "firstEffect": null,
+                  "index": 0,
+                  "key": null,
+                  "lastEffect": null,
+                  "memoizedProps": Object {
+                    "cancelText": "Cancel",
+                    "children": "",
+                    "confirmLoading": false,
+                    "footer": null,
+                    "maskTransitionName": "fade",
+                    "mousePosition": undefined,
+                    "okText": "Ok",
+                    "okType": "primary",
+                    "onCancel": [Function],
+                    "onClose": [Function],
+                    "onOk": [Function],
+                    "prefixCls": "ant-modal",
+                    "title": "",
+                    "transitionName": "zoom",
+                    "visible": false,
+                    "width": 520,
+                  },
+                  "memoizedState": null,
+                  "mode": 0,
+                  "nextEffect": null,
+                  "pendingProps": Object {
+                    "cancelText": "Cancel",
+                    "children": "",
+                    "confirmLoading": false,
+                    "footer": null,
+                    "maskTransitionName": "fade",
+                    "mousePosition": undefined,
+                    "okText": "Ok",
+                    "okType": "primary",
+                    "onCancel": [Function],
+                    "onClose": [Function],
+                    "onOk": [Function],
+                    "prefixCls": "ant-modal",
+                    "title": "",
+                    "transitionName": "zoom",
+                    "visible": false,
+                    "width": 520,
+                  },
+                  "ref": null,
+                  "return": [Circular],
+                  "sibling": null,
+                  "stateNode": DialogWrap {
+                    "_reactInternalFiber": [Circular],
+                    "_reactInternalInstance": Object {},
+                    "context": Object {},
+                    "getComponent": [Function],
+                    "getContainer": [Function],
+                    "props": Object {
+                      "cancelText": "Cancel",
+                      "children": "",
+                      "confirmLoading": false,
+                      "footer": null,
+                      "maskTransitionName": "fade",
+                      "mousePosition": undefined,
+                      "okText": "Ok",
+                      "okType": "primary",
+                      "onCancel": [Function],
+                      "onClose": [Function],
+                      "onOk": [Function],
+                      "prefixCls": "ant-modal",
+                      "title": "",
+                      "transitionName": "zoom",
+                      "visible": false,
+                      "width": 520,
+                    },
+                    "refs": Object {},
+                    "saveDialog": [Function],
+                    "state": null,
+                    "updater": Object {
+                      "enqueueForceUpdate": [Function],
+                      "enqueueReplaceState": [Function],
+                      "enqueueSetState": [Function],
+                      "isMounted": [Function],
+                    },
+                  },
+                  "tag": 2,
+                  "type": [Function],
+                  "updateQueue": null,
+                },
+                "effectTag": 5,
+                "expirationTime": 0,
+                "firstEffect": null,
+                "index": 1,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Object {
+                  "cancelText": "Cancel",
+                  "children": "",
+                  "confirmLoading": false,
+                  "footer": null,
+                  "maskTransitionName": "fade",
+                  "okText": "Ok",
+                  "okType": "primary",
+                  "onCancel": [Function],
+                  "onOk": [Function],
+                  "prefixCls": "ant-modal",
+                  "title": "",
+                  "transitionName": "zoom",
+                  "visible": false,
+                  "width": 520,
+                },
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": Object {
+                  "cancelText": "Cancel",
+                  "children": "",
+                  "confirmLoading": false,
+                  "footer": null,
+                  "maskTransitionName": "fade",
+                  "okText": "Ok",
+                  "okType": "primary",
+                  "onCancel": [Function],
+                  "onOk": [Function],
+                  "prefixCls": "ant-modal",
+                  "title": "",
+                  "transitionName": "zoom",
+                  "visible": false,
+                  "width": 520,
+                },
+                "ref": null,
+                "return": [Circular],
+                "sibling": null,
+                "stateNode": Modal {
+                  "_reactInternalFiber": [Circular],
+                  "_reactInternalInstance": Object {},
+                  "context": Object {},
+                  "handleCancel": [Function],
+                  "handleOk": [Function],
+                  "props": Object {
+                    "cancelText": "Cancel",
+                    "children": "",
+                    "confirmLoading": false,
+                    "footer": null,
+                    "maskTransitionName": "fade",
+                    "okText": "Ok",
+                    "okType": "primary",
+                    "onCancel": [Function],
+                    "onOk": [Function],
+                    "prefixCls": "ant-modal",
+                    "title": "",
+                    "transitionName": "zoom",
+                    "visible": false,
+                    "width": 520,
+                  },
+                  "refs": Object {},
+                  "renderFooter": [Function],
+                  "state": null,
+                  "updater": Object {
+                    "enqueueForceUpdate": [Function],
+                    "enqueueReplaceState": [Function],
+                    "enqueueSetState": [Function],
+                    "isMounted": [Function],
+                  },
+                },
+                "tag": 2,
+                "type": [Function],
+                "updateQueue": null,
+              },
+              "stateNode": null,
+              "tag": 10,
+              "type": null,
+              "updateQueue": null,
+            },
+            "effectTag": 0,
+            "expirationTime": 0,
+            "firstEffect": FiberNode {
+              "_debugID": 6,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": [Circular],
+              "_debugSource": Object {
+                "fileName": "/Users/nthock/Documents/Projects/enterprise/boilerplate/frontend_react/src/shared/Dialog.js",
+                "lineNumber": 28,
+              },
+              "alternate": null,
+              "child": FiberNode {
+                "_debugID": 9,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": [Circular],
+                "_debugSource": null,
+                "alternate": null,
+                "child": null,
+                "effectTag": 1,
+                "expirationTime": 0,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Object {
+                  "cancelText": "Cancel",
+                  "children": "",
+                  "confirmLoading": false,
+                  "footer": null,
+                  "maskTransitionName": "fade",
+                  "mousePosition": undefined,
+                  "okText": "Ok",
+                  "okType": "primary",
+                  "onCancel": [Function],
+                  "onClose": [Function],
+                  "onOk": [Function],
+                  "prefixCls": "ant-modal",
+                  "title": "",
+                  "transitionName": "zoom",
+                  "visible": false,
+                  "width": 520,
+                },
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": Object {
+                  "cancelText": "Cancel",
+                  "children": "",
+                  "confirmLoading": false,
+                  "footer": null,
+                  "maskTransitionName": "fade",
+                  "mousePosition": undefined,
+                  "okText": "Ok",
+                  "okType": "primary",
+                  "onCancel": [Function],
+                  "onClose": [Function],
+                  "onOk": [Function],
+                  "prefixCls": "ant-modal",
+                  "title": "",
+                  "transitionName": "zoom",
+                  "visible": false,
+                  "width": 520,
+                },
+                "ref": null,
+                "return": [Circular],
+                "sibling": null,
+                "stateNode": DialogWrap {
+                  "_reactInternalFiber": [Circular],
+                  "_reactInternalInstance": Object {},
+                  "context": Object {},
+                  "getComponent": [Function],
+                  "getContainer": [Function],
+                  "props": Object {
+                    "cancelText": "Cancel",
+                    "children": "",
+                    "confirmLoading": false,
+                    "footer": null,
+                    "maskTransitionName": "fade",
+                    "mousePosition": undefined,
+                    "okText": "Ok",
+                    "okType": "primary",
+                    "onCancel": [Function],
+                    "onClose": [Function],
+                    "onOk": [Function],
+                    "prefixCls": "ant-modal",
+                    "title": "",
+                    "transitionName": "zoom",
+                    "visible": false,
+                    "width": 520,
+                  },
+                  "refs": Object {},
+                  "saveDialog": [Function],
+                  "state": null,
+                  "updater": Object {
+                    "enqueueForceUpdate": [Function],
+                    "enqueueReplaceState": [Function],
+                    "enqueueSetState": [Function],
+                    "isMounted": [Function],
+                  },
+                },
+                "tag": 2,
+                "type": [Function],
+                "updateQueue": null,
+              },
+              "effectTag": 5,
+              "expirationTime": 0,
+              "firstEffect": null,
+              "index": 1,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Object {
+                "cancelText": "Cancel",
+                "children": "",
+                "confirmLoading": false,
+                "footer": null,
+                "maskTransitionName": "fade",
+                "okText": "Ok",
+                "okType": "primary",
+                "onCancel": [Function],
+                "onOk": [Function],
+                "prefixCls": "ant-modal",
+                "title": "",
+                "transitionName": "zoom",
+                "visible": false,
+                "width": 520,
+              },
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": Object {
+                "cancelText": "Cancel",
+                "children": "",
+                "confirmLoading": false,
+                "footer": null,
+                "maskTransitionName": "fade",
+                "okText": "Ok",
+                "okType": "primary",
+                "onCancel": [Function],
+                "onOk": [Function],
+                "prefixCls": "ant-modal",
+                "title": "",
+                "transitionName": "zoom",
+                "visible": false,
+                "width": 520,
+              },
+              "ref": null,
+              "return": [Circular],
+              "sibling": null,
+              "stateNode": Modal {
+                "_reactInternalFiber": [Circular],
+                "_reactInternalInstance": Object {},
+                "context": Object {},
+                "handleCancel": [Function],
+                "handleOk": [Function],
+                "props": Object {
+                  "cancelText": "Cancel",
+                  "children": "",
+                  "confirmLoading": false,
+                  "footer": null,
+                  "maskTransitionName": "fade",
+                  "okText": "Ok",
+                  "okType": "primary",
+                  "onCancel": [Function],
+                  "onOk": [Function],
+                  "prefixCls": "ant-modal",
+                  "title": "",
+                  "transitionName": "zoom",
+                  "visible": false,
+                  "width": 520,
+                },
+                "refs": Object {},
+                "renderFooter": [Function],
+                "state": null,
+                "updater": Object {
+                  "enqueueForceUpdate": [Function],
+                  "enqueueReplaceState": [Function],
+                  "enqueueSetState": [Function],
+                  "isMounted": [Function],
+                },
+              },
+              "tag": 2,
+              "type": [Function],
+              "updateQueue": null,
+            },
+            "index": 0,
+            "key": null,
+            "lastEffect": FiberNode {
+              "_debugID": 6,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": [Circular],
+              "_debugSource": Object {
+                "fileName": "/Users/nthock/Documents/Projects/enterprise/boilerplate/frontend_react/src/shared/Dialog.js",
+                "lineNumber": 28,
+              },
+              "alternate": null,
+              "child": FiberNode {
+                "_debugID": 9,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": [Circular],
+                "_debugSource": null,
+                "alternate": null,
+                "child": null,
+                "effectTag": 1,
+                "expirationTime": 0,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Object {
+                  "cancelText": "Cancel",
+                  "children": "",
+                  "confirmLoading": false,
+                  "footer": null,
+                  "maskTransitionName": "fade",
+                  "mousePosition": undefined,
+                  "okText": "Ok",
+                  "okType": "primary",
+                  "onCancel": [Function],
+                  "onClose": [Function],
+                  "onOk": [Function],
+                  "prefixCls": "ant-modal",
+                  "title": "",
+                  "transitionName": "zoom",
+                  "visible": false,
+                  "width": 520,
+                },
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": Object {
+                  "cancelText": "Cancel",
+                  "children": "",
+                  "confirmLoading": false,
+                  "footer": null,
+                  "maskTransitionName": "fade",
+                  "mousePosition": undefined,
+                  "okText": "Ok",
+                  "okType": "primary",
+                  "onCancel": [Function],
+                  "onClose": [Function],
+                  "onOk": [Function],
+                  "prefixCls": "ant-modal",
+                  "title": "",
+                  "transitionName": "zoom",
+                  "visible": false,
+                  "width": 520,
+                },
+                "ref": null,
+                "return": [Circular],
+                "sibling": null,
+                "stateNode": DialogWrap {
+                  "_reactInternalFiber": [Circular],
+                  "_reactInternalInstance": Object {},
+                  "context": Object {},
+                  "getComponent": [Function],
+                  "getContainer": [Function],
+                  "props": Object {
+                    "cancelText": "Cancel",
+                    "children": "",
+                    "confirmLoading": false,
+                    "footer": null,
+                    "maskTransitionName": "fade",
+                    "mousePosition": undefined,
+                    "okText": "Ok",
+                    "okType": "primary",
+                    "onCancel": [Function],
+                    "onClose": [Function],
+                    "onOk": [Function],
+                    "prefixCls": "ant-modal",
+                    "title": "",
+                    "transitionName": "zoom",
+                    "visible": false,
+                    "width": 520,
+                  },
+                  "refs": Object {},
+                  "saveDialog": [Function],
+                  "state": null,
+                  "updater": Object {
+                    "enqueueForceUpdate": [Function],
+                    "enqueueReplaceState": [Function],
+                    "enqueueSetState": [Function],
+                    "isMounted": [Function],
+                  },
+                },
+                "tag": 2,
+                "type": [Function],
+                "updateQueue": null,
+              },
+              "effectTag": 5,
+              "expirationTime": 0,
+              "firstEffect": null,
+              "index": 1,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Object {
+                "cancelText": "Cancel",
+                "children": "",
+                "confirmLoading": false,
+                "footer": null,
+                "maskTransitionName": "fade",
+                "okText": "Ok",
+                "okType": "primary",
+                "onCancel": [Function],
+                "onOk": [Function],
+                "prefixCls": "ant-modal",
+                "title": "",
+                "transitionName": "zoom",
+                "visible": false,
+                "width": 520,
+              },
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": Object {
+                "cancelText": "Cancel",
+                "children": "",
+                "confirmLoading": false,
+                "footer": null,
+                "maskTransitionName": "fade",
+                "okText": "Ok",
+                "okType": "primary",
+                "onCancel": [Function],
+                "onOk": [Function],
+                "prefixCls": "ant-modal",
+                "title": "",
+                "transitionName": "zoom",
+                "visible": false,
+                "width": 520,
+              },
+              "ref": null,
+              "return": [Circular],
+              "sibling": null,
+              "stateNode": Modal {
+                "_reactInternalFiber": [Circular],
+                "_reactInternalInstance": Object {},
+                "context": Object {},
+                "handleCancel": [Function],
+                "handleOk": [Function],
+                "props": Object {
+                  "cancelText": "Cancel",
+                  "children": "",
+                  "confirmLoading": false,
+                  "footer": null,
+                  "maskTransitionName": "fade",
+                  "okText": "Ok",
+                  "okType": "primary",
+                  "onCancel": [Function],
+                  "onOk": [Function],
+                  "prefixCls": "ant-modal",
+                  "title": "",
+                  "transitionName": "zoom",
+                  "visible": false,
+                  "width": 520,
+                },
+                "refs": Object {},
+                "renderFooter": [Function],
+                "state": null,
+                "updater": Object {
+                  "enqueueForceUpdate": [Function],
+                  "enqueueReplaceState": [Function],
+                  "enqueueSetState": [Function],
+                  "isMounted": [Function],
+                },
+              },
+              "tag": 2,
+              "type": [Function],
+              "updateQueue": null,
+            },
+            "memoizedProps": Object {
+              "children": Array [
+                Array [
+                  <div
+                    Dialog={[Circular]}
+      >
+                    Dummy Content
+      </div>,
+                ],
+                <Modal
+                  cancelText="Cancel"
+                  confirmLoading={false}
+                  footer={null}
+                  maskTransitionName="fade"
+                  okText="Ok"
+                  okType="primary"
+                  onCancel={[Function]}
+                  onOk={[Function]}
+                  prefixCls="ant-modal"
+                  title=""
+                  transitionName="zoom"
+                  visible={false}
+                  width={520}
+      />,
+              ],
+            },
+            "memoizedState": null,
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": Object {
+              "children": Array [
+                Array [
+                  <div
+                    Dialog={[Circular]}
+      >
+                    Dummy Content
+      </div>,
+                ],
+                <Modal
+                  cancelText="Cancel"
+                  confirmLoading={false}
+                  footer={null}
+                  maskTransitionName="fade"
+                  okText="Ok"
+                  okType="primary"
+                  onCancel={[Function]}
+                  onOk={[Function]}
+                  prefixCls="ant-modal"
+                  title=""
+                  transitionName="zoom"
+                  visible={false}
+                  width={520}
+      />,
+              ],
+            },
+            "ref": null,
+            "return": [Circular],
+            "sibling": null,
+            "stateNode": Object {
+              "children": Array [
+                Object {
+                  "children": Array [
+                    Object {
+                      "tag": "TEXT",
+                      "text": "Dummy Content",
+                    },
+                  ],
+                  "props": Object {
+                    "Dialog": [Circular],
+                    "children": "Dummy Content",
+                  },
+                  "rootContainerInstance": Object {
+                    "children": Array [
+                      [Circular],
+                    ],
+                    "createNodeMock": [Function],
+                    "tag": "CONTAINER",
+                  },
+                  "tag": "INSTANCE",
+                  "type": "div",
+                },
+              ],
+              "props": Object {
+                "children": Array [
+                  Array [
+                    <div
+                      Dialog={[Circular]}
+      >
+                      Dummy Content
+      </div>,
+                  ],
+                  <Modal
+                    cancelText="Cancel"
+                    confirmLoading={false}
+                    footer={null}
+                    maskTransitionName="fade"
+                    okText="Ok"
+                    okType="primary"
+                    onCancel={[Function]}
+                    onOk={[Function]}
+                    prefixCls="ant-modal"
+                    title=""
+                    transitionName="zoom"
+                    visible={false}
+                    width={520}
+      />,
+                ],
+              },
+              "rootContainerInstance": Object {
+                "children": Array [
+                  [Circular],
+                ],
+                "createNodeMock": [Function],
+                "tag": "CONTAINER",
+              },
+              "tag": "INSTANCE",
+              "type": "div",
+            },
+            "tag": 5,
+            "type": "div",
+            "updateQueue": null,
+          },
+          "effectTag": 1,
+          "expirationTime": 0,
+          "firstEffect": FiberNode {
+            "_debugID": 6,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": [Circular],
+            "_debugSource": Object {
+              "fileName": "/Users/nthock/Documents/Projects/enterprise/boilerplate/frontend_react/src/shared/Dialog.js",
+              "lineNumber": 28,
+            },
+            "alternate": null,
+            "child": FiberNode {
+              "_debugID": 9,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": [Circular],
+              "_debugSource": null,
+              "alternate": null,
+              "child": null,
+              "effectTag": 1,
+              "expirationTime": 0,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Object {
+                "cancelText": "Cancel",
+                "children": "",
+                "confirmLoading": false,
+                "footer": null,
+                "maskTransitionName": "fade",
+                "mousePosition": undefined,
+                "okText": "Ok",
+                "okType": "primary",
+                "onCancel": [Function],
+                "onClose": [Function],
+                "onOk": [Function],
+                "prefixCls": "ant-modal",
+                "title": "",
+                "transitionName": "zoom",
+                "visible": false,
+                "width": 520,
+              },
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": Object {
+                "cancelText": "Cancel",
+                "children": "",
+                "confirmLoading": false,
+                "footer": null,
+                "maskTransitionName": "fade",
+                "mousePosition": undefined,
+                "okText": "Ok",
+                "okType": "primary",
+                "onCancel": [Function],
+                "onClose": [Function],
+                "onOk": [Function],
+                "prefixCls": "ant-modal",
+                "title": "",
+                "transitionName": "zoom",
+                "visible": false,
+                "width": 520,
+              },
+              "ref": null,
+              "return": [Circular],
+              "sibling": null,
+              "stateNode": DialogWrap {
+                "_reactInternalFiber": [Circular],
+                "_reactInternalInstance": Object {},
+                "context": Object {},
+                "getComponent": [Function],
+                "getContainer": [Function],
+                "props": Object {
+                  "cancelText": "Cancel",
+                  "children": "",
+                  "confirmLoading": false,
+                  "footer": null,
+                  "maskTransitionName": "fade",
+                  "mousePosition": undefined,
+                  "okText": "Ok",
+                  "okType": "primary",
+                  "onCancel": [Function],
+                  "onClose": [Function],
+                  "onOk": [Function],
+                  "prefixCls": "ant-modal",
+                  "title": "",
+                  "transitionName": "zoom",
+                  "visible": false,
+                  "width": 520,
+                },
+                "refs": Object {},
+                "saveDialog": [Function],
+                "state": null,
+                "updater": Object {
+                  "enqueueForceUpdate": [Function],
+                  "enqueueReplaceState": [Function],
+                  "enqueueSetState": [Function],
+                  "isMounted": [Function],
+                },
+              },
+              "tag": 2,
+              "type": [Function],
+              "updateQueue": null,
+            },
+            "effectTag": 5,
+            "expirationTime": 0,
+            "firstEffect": null,
+            "index": 1,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "cancelText": "Cancel",
+              "children": "",
+              "confirmLoading": false,
+              "footer": null,
+              "maskTransitionName": "fade",
+              "okText": "Ok",
+              "okType": "primary",
+              "onCancel": [Function],
+              "onOk": [Function],
+              "prefixCls": "ant-modal",
+              "title": "",
+              "transitionName": "zoom",
+              "visible": false,
+              "width": 520,
+            },
+            "memoizedState": null,
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": Object {
+              "cancelText": "Cancel",
+              "children": "",
+              "confirmLoading": false,
+              "footer": null,
+              "maskTransitionName": "fade",
+              "okText": "Ok",
+              "okType": "primary",
+              "onCancel": [Function],
+              "onOk": [Function],
+              "prefixCls": "ant-modal",
+              "title": "",
+              "transitionName": "zoom",
+              "visible": false,
+              "width": 520,
+            },
+            "ref": null,
+            "return": FiberNode {
+              "_debugID": 4,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": [Circular],
+              "_debugSource": Object {
+                "fileName": "/Users/nthock/Documents/Projects/enterprise/boilerplate/frontend_react/src/shared/Dialog.js",
+                "lineNumber": 26,
+              },
+              "alternate": null,
+              "child": FiberNode {
+                "_debugID": 5,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": null,
+                "_debugSource": null,
+                "alternate": null,
+                "child": FiberNode {
+                  "_debugID": 7,
+                  "_debugIsCurrentlyTiming": false,
+                  "_debugOwner": null,
+                  "_debugSource": Object {
+                    "fileName": "/Users/nthock/Documents/Projects/enterprise/boilerplate/frontend_react/src/tests/shared/Dialog.spec.js",
+                    "lineNumber": 9,
+                  },
+                  "alternate": null,
+                  "child": FiberNode {
+                    "_debugID": 8,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": null,
+                    "_debugSource": null,
+                    "alternate": null,
+                    "child": null,
+                    "effectTag": 0,
+                    "expirationTime": 0,
+                    "firstEffect": null,
+                    "index": 0,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": "Dummy Content",
+                    "memoizedState": null,
+                    "mode": 0,
+                    "nextEffect": null,
+                    "pendingProps": "Dummy Content",
+                    "ref": null,
+                    "return": [Circular],
+                    "sibling": null,
+                    "stateNode": Object {
+                      "tag": "TEXT",
+                      "text": "Dummy Content",
+                    },
+                    "tag": 6,
+                    "type": null,
+                    "updateQueue": null,
+                  },
+                  "effectTag": 0,
+                  "expirationTime": 0,
+                  "firstEffect": null,
+                  "index": 0,
+                  "key": ".0",
+                  "lastEffect": null,
+                  "memoizedProps": Object {
+                    "Dialog": [Circular],
+                    "children": "Dummy Content",
+                  },
+                  "memoizedState": null,
+                  "mode": 0,
+                  "nextEffect": null,
+                  "pendingProps": Object {
+                    "Dialog": [Circular],
+                    "children": "Dummy Content",
+                  },
+                  "ref": null,
+                  "return": [Circular],
+                  "sibling": null,
+                  "stateNode": Object {
+                    "children": Array [
+                      Object {
+                        "tag": "TEXT",
+                        "text": "Dummy Content",
+                      },
+                    ],
+                    "props": Object {
+                      "Dialog": [Circular],
+                      "children": "Dummy Content",
+                    },
+                    "rootContainerInstance": Object {
+                      "children": Array [
+                        Object {
+                          "children": Array [
+                            [Circular],
+                          ],
+                          "props": Object {
+                            "children": Array [
+                              Array [
+                                <div
+                                  Dialog={[Circular]}
+      >
+                                  Dummy Content
+      </div>,
+                              ],
+                              <Modal
+                                cancelText="Cancel"
+                                confirmLoading={false}
+                                footer={null}
+                                maskTransitionName="fade"
+                                okText="Ok"
+                                okType="primary"
+                                onCancel={[Function]}
+                                onOk={[Function]}
+                                prefixCls="ant-modal"
+                                title=""
+                                transitionName="zoom"
+                                visible={false}
+                                width={520}
+      />,
+                            ],
+                          },
+                          "rootContainerInstance": [Circular],
+                          "tag": "INSTANCE",
+                          "type": "div",
+                        },
+                      ],
+                      "createNodeMock": [Function],
+                      "tag": "CONTAINER",
+                    },
+                    "tag": "INSTANCE",
+                    "type": "div",
+                  },
+                  "tag": 5,
+                  "type": "div",
+                  "updateQueue": null,
+                },
+                "effectTag": 0,
+                "expirationTime": 0,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Array [
+                  <div
+                    Dialog={[Circular]}
+      >
+                    Dummy Content
+      </div>,
+                ],
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": Array [
+                  <div
+                    Dialog={[Circular]}
+      >
+                    Dummy Content
+      </div>,
+                ],
+                "ref": null,
+                "return": [Circular],
+                "sibling": [Circular],
+                "stateNode": null,
+                "tag": 10,
+                "type": null,
+                "updateQueue": null,
+              },
+              "effectTag": 0,
+              "expirationTime": 0,
+              "firstEffect": [Circular],
+              "index": 0,
+              "key": null,
+              "lastEffect": [Circular],
+              "memoizedProps": Object {
+                "children": Array [
+                  Array [
+                    <div
+                      Dialog={[Circular]}
+      >
+                      Dummy Content
+      </div>,
+                  ],
+                  <Modal
+                    cancelText="Cancel"
+                    confirmLoading={false}
+                    footer={null}
+                    maskTransitionName="fade"
+                    okText="Ok"
+                    okType="primary"
+                    onCancel={[Function]}
+                    onOk={[Function]}
+                    prefixCls="ant-modal"
+                    title=""
+                    transitionName="zoom"
+                    visible={false}
+                    width={520}
+      />,
+                ],
+              },
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": Object {
+                "children": Array [
+                  Array [
+                    <div
+                      Dialog={[Circular]}
+      >
+                      Dummy Content
+      </div>,
+                  ],
+                  <Modal
+                    cancelText="Cancel"
+                    confirmLoading={false}
+                    footer={null}
+                    maskTransitionName="fade"
+                    okText="Ok"
+                    okType="primary"
+                    onCancel={[Function]}
+                    onOk={[Function]}
+                    prefixCls="ant-modal"
+                    title=""
+                    transitionName="zoom"
+                    visible={false}
+                    width={520}
+      />,
+                ],
+              },
+              "ref": null,
+              "return": [Circular],
+              "sibling": null,
+              "stateNode": Object {
+                "children": Array [
+                  Object {
+                    "children": Array [
+                      Object {
+                        "tag": "TEXT",
+                        "text": "Dummy Content",
+                      },
+                    ],
+                    "props": Object {
+                      "Dialog": [Circular],
+                      "children": "Dummy Content",
+                    },
+                    "rootContainerInstance": Object {
+                      "children": Array [
+                        [Circular],
+                      ],
+                      "createNodeMock": [Function],
+                      "tag": "CONTAINER",
+                    },
+                    "tag": "INSTANCE",
+                    "type": "div",
+                  },
+                ],
+                "props": Object {
+                  "children": Array [
+                    Array [
+                      <div
+                        Dialog={[Circular]}
+      >
+                        Dummy Content
+      </div>,
+                    ],
+                    <Modal
+                      cancelText="Cancel"
+                      confirmLoading={false}
+                      footer={null}
+                      maskTransitionName="fade"
+                      okText="Ok"
+                      okType="primary"
+                      onCancel={[Function]}
+                      onOk={[Function]}
+                      prefixCls="ant-modal"
+                      title=""
+                      transitionName="zoom"
+                      visible={false}
+                      width={520}
+      />,
+                  ],
+                },
+                "rootContainerInstance": Object {
+                  "children": Array [
+                    [Circular],
+                  ],
+                  "createNodeMock": [Function],
+                  "tag": "CONTAINER",
+                },
+                "tag": "INSTANCE",
+                "type": "div",
+              },
+              "tag": 5,
+              "type": "div",
+              "updateQueue": null,
+            },
+            "sibling": null,
+            "stateNode": Modal {
+              "_reactInternalFiber": [Circular],
+              "_reactInternalInstance": Object {},
+              "context": Object {},
+              "handleCancel": [Function],
+              "handleOk": [Function],
+              "props": Object {
+                "cancelText": "Cancel",
+                "children": "",
+                "confirmLoading": false,
+                "footer": null,
+                "maskTransitionName": "fade",
+                "okText": "Ok",
+                "okType": "primary",
+                "onCancel": [Function],
+                "onOk": [Function],
+                "prefixCls": "ant-modal",
+                "title": "",
+                "transitionName": "zoom",
+                "visible": false,
+                "width": 520,
+              },
+              "refs": Object {},
+              "renderFooter": [Function],
+              "state": null,
+              "updater": Object {
+                "enqueueForceUpdate": [Function],
+                "enqueueReplaceState": [Function],
+                "enqueueSetState": [Function],
+                "isMounted": [Function],
+              },
+            },
+            "tag": 2,
+            "type": [Function],
+            "updateQueue": null,
+          },
+          "index": 0,
+          "key": null,
+          "lastEffect": FiberNode {
+            "_debugID": 6,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": [Circular],
+            "_debugSource": Object {
+              "fileName": "/Users/nthock/Documents/Projects/enterprise/boilerplate/frontend_react/src/shared/Dialog.js",
+              "lineNumber": 28,
+            },
+            "alternate": null,
+            "child": FiberNode {
+              "_debugID": 9,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": [Circular],
+              "_debugSource": null,
+              "alternate": null,
+              "child": null,
+              "effectTag": 1,
+              "expirationTime": 0,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Object {
+                "cancelText": "Cancel",
+                "children": "",
+                "confirmLoading": false,
+                "footer": null,
+                "maskTransitionName": "fade",
+                "mousePosition": undefined,
+                "okText": "Ok",
+                "okType": "primary",
+                "onCancel": [Function],
+                "onClose": [Function],
+                "onOk": [Function],
+                "prefixCls": "ant-modal",
+                "title": "",
+                "transitionName": "zoom",
+                "visible": false,
+                "width": 520,
+              },
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": Object {
+                "cancelText": "Cancel",
+                "children": "",
+                "confirmLoading": false,
+                "footer": null,
+                "maskTransitionName": "fade",
+                "mousePosition": undefined,
+                "okText": "Ok",
+                "okType": "primary",
+                "onCancel": [Function],
+                "onClose": [Function],
+                "onOk": [Function],
+                "prefixCls": "ant-modal",
+                "title": "",
+                "transitionName": "zoom",
+                "visible": false,
+                "width": 520,
+              },
+              "ref": null,
+              "return": [Circular],
+              "sibling": null,
+              "stateNode": DialogWrap {
+                "_reactInternalFiber": [Circular],
+                "_reactInternalInstance": Object {},
+                "context": Object {},
+                "getComponent": [Function],
+                "getContainer": [Function],
+                "props": Object {
+                  "cancelText": "Cancel",
+                  "children": "",
+                  "confirmLoading": false,
+                  "footer": null,
+                  "maskTransitionName": "fade",
+                  "mousePosition": undefined,
+                  "okText": "Ok",
+                  "okType": "primary",
+                  "onCancel": [Function],
+                  "onClose": [Function],
+                  "onOk": [Function],
+                  "prefixCls": "ant-modal",
+                  "title": "",
+                  "transitionName": "zoom",
+                  "visible": false,
+                  "width": 520,
+                },
+                "refs": Object {},
+                "saveDialog": [Function],
+                "state": null,
+                "updater": Object {
+                  "enqueueForceUpdate": [Function],
+                  "enqueueReplaceState": [Function],
+                  "enqueueSetState": [Function],
+                  "isMounted": [Function],
+                },
+              },
+              "tag": 2,
+              "type": [Function],
+              "updateQueue": null,
+            },
+            "effectTag": 5,
+            "expirationTime": 0,
+            "firstEffect": null,
+            "index": 1,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "cancelText": "Cancel",
+              "children": "",
+              "confirmLoading": false,
+              "footer": null,
+              "maskTransitionName": "fade",
+              "okText": "Ok",
+              "okType": "primary",
+              "onCancel": [Function],
+              "onOk": [Function],
+              "prefixCls": "ant-modal",
+              "title": "",
+              "transitionName": "zoom",
+              "visible": false,
+              "width": 520,
+            },
+            "memoizedState": null,
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": Object {
+              "cancelText": "Cancel",
+              "children": "",
+              "confirmLoading": false,
+              "footer": null,
+              "maskTransitionName": "fade",
+              "okText": "Ok",
+              "okType": "primary",
+              "onCancel": [Function],
+              "onOk": [Function],
+              "prefixCls": "ant-modal",
+              "title": "",
+              "transitionName": "zoom",
+              "visible": false,
+              "width": 520,
+            },
+            "ref": null,
+            "return": FiberNode {
+              "_debugID": 4,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": [Circular],
+              "_debugSource": Object {
+                "fileName": "/Users/nthock/Documents/Projects/enterprise/boilerplate/frontend_react/src/shared/Dialog.js",
+                "lineNumber": 26,
+              },
+              "alternate": null,
+              "child": FiberNode {
+                "_debugID": 5,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": null,
+                "_debugSource": null,
+                "alternate": null,
+                "child": FiberNode {
+                  "_debugID": 7,
+                  "_debugIsCurrentlyTiming": false,
+                  "_debugOwner": null,
+                  "_debugSource": Object {
+                    "fileName": "/Users/nthock/Documents/Projects/enterprise/boilerplate/frontend_react/src/tests/shared/Dialog.spec.js",
+                    "lineNumber": 9,
+                  },
+                  "alternate": null,
+                  "child": FiberNode {
+                    "_debugID": 8,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": null,
+                    "_debugSource": null,
+                    "alternate": null,
+                    "child": null,
+                    "effectTag": 0,
+                    "expirationTime": 0,
+                    "firstEffect": null,
+                    "index": 0,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": "Dummy Content",
+                    "memoizedState": null,
+                    "mode": 0,
+                    "nextEffect": null,
+                    "pendingProps": "Dummy Content",
+                    "ref": null,
+                    "return": [Circular],
+                    "sibling": null,
+                    "stateNode": Object {
+                      "tag": "TEXT",
+                      "text": "Dummy Content",
+                    },
+                    "tag": 6,
+                    "type": null,
+                    "updateQueue": null,
+                  },
+                  "effectTag": 0,
+                  "expirationTime": 0,
+                  "firstEffect": null,
+                  "index": 0,
+                  "key": ".0",
+                  "lastEffect": null,
+                  "memoizedProps": Object {
+                    "Dialog": [Circular],
+                    "children": "Dummy Content",
+                  },
+                  "memoizedState": null,
+                  "mode": 0,
+                  "nextEffect": null,
+                  "pendingProps": Object {
+                    "Dialog": [Circular],
+                    "children": "Dummy Content",
+                  },
+                  "ref": null,
+                  "return": [Circular],
+                  "sibling": null,
+                  "stateNode": Object {
+                    "children": Array [
+                      Object {
+                        "tag": "TEXT",
+                        "text": "Dummy Content",
+                      },
+                    ],
+                    "props": Object {
+                      "Dialog": [Circular],
+                      "children": "Dummy Content",
+                    },
+                    "rootContainerInstance": Object {
+                      "children": Array [
+                        Object {
+                          "children": Array [
+                            [Circular],
+                          ],
+                          "props": Object {
+                            "children": Array [
+                              Array [
+                                <div
+                                  Dialog={[Circular]}
+      >
+                                  Dummy Content
+      </div>,
+                              ],
+                              <Modal
+                                cancelText="Cancel"
+                                confirmLoading={false}
+                                footer={null}
+                                maskTransitionName="fade"
+                                okText="Ok"
+                                okType="primary"
+                                onCancel={[Function]}
+                                onOk={[Function]}
+                                prefixCls="ant-modal"
+                                title=""
+                                transitionName="zoom"
+                                visible={false}
+                                width={520}
+      />,
+                            ],
+                          },
+                          "rootContainerInstance": [Circular],
+                          "tag": "INSTANCE",
+                          "type": "div",
+                        },
+                      ],
+                      "createNodeMock": [Function],
+                      "tag": "CONTAINER",
+                    },
+                    "tag": "INSTANCE",
+                    "type": "div",
+                  },
+                  "tag": 5,
+                  "type": "div",
+                  "updateQueue": null,
+                },
+                "effectTag": 0,
+                "expirationTime": 0,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Array [
+                  <div
+                    Dialog={[Circular]}
+      >
+                    Dummy Content
+      </div>,
+                ],
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": Array [
+                  <div
+                    Dialog={[Circular]}
+      >
+                    Dummy Content
+      </div>,
+                ],
+                "ref": null,
+                "return": [Circular],
+                "sibling": [Circular],
+                "stateNode": null,
+                "tag": 10,
+                "type": null,
+                "updateQueue": null,
+              },
+              "effectTag": 0,
+              "expirationTime": 0,
+              "firstEffect": [Circular],
+              "index": 0,
+              "key": null,
+              "lastEffect": [Circular],
+              "memoizedProps": Object {
+                "children": Array [
+                  Array [
+                    <div
+                      Dialog={[Circular]}
+      >
+                      Dummy Content
+      </div>,
+                  ],
+                  <Modal
+                    cancelText="Cancel"
+                    confirmLoading={false}
+                    footer={null}
+                    maskTransitionName="fade"
+                    okText="Ok"
+                    okType="primary"
+                    onCancel={[Function]}
+                    onOk={[Function]}
+                    prefixCls="ant-modal"
+                    title=""
+                    transitionName="zoom"
+                    visible={false}
+                    width={520}
+      />,
+                ],
+              },
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": Object {
+                "children": Array [
+                  Array [
+                    <div
+                      Dialog={[Circular]}
+      >
+                      Dummy Content
+      </div>,
+                  ],
+                  <Modal
+                    cancelText="Cancel"
+                    confirmLoading={false}
+                    footer={null}
+                    maskTransitionName="fade"
+                    okText="Ok"
+                    okType="primary"
+                    onCancel={[Function]}
+                    onOk={[Function]}
+                    prefixCls="ant-modal"
+                    title=""
+                    transitionName="zoom"
+                    visible={false}
+                    width={520}
+      />,
+                ],
+              },
+              "ref": null,
+              "return": [Circular],
+              "sibling": null,
+              "stateNode": Object {
+                "children": Array [
+                  Object {
+                    "children": Array [
+                      Object {
+                        "tag": "TEXT",
+                        "text": "Dummy Content",
+                      },
+                    ],
+                    "props": Object {
+                      "Dialog": [Circular],
+                      "children": "Dummy Content",
+                    },
+                    "rootContainerInstance": Object {
+                      "children": Array [
+                        [Circular],
+                      ],
+                      "createNodeMock": [Function],
+                      "tag": "CONTAINER",
+                    },
+                    "tag": "INSTANCE",
+                    "type": "div",
+                  },
+                ],
+                "props": Object {
+                  "children": Array [
+                    Array [
+                      <div
+                        Dialog={[Circular]}
+      >
+                        Dummy Content
+      </div>,
+                    ],
+                    <Modal
+                      cancelText="Cancel"
+                      confirmLoading={false}
+                      footer={null}
+                      maskTransitionName="fade"
+                      okText="Ok"
+                      okType="primary"
+                      onCancel={[Function]}
+                      onOk={[Function]}
+                      prefixCls="ant-modal"
+                      title=""
+                      transitionName="zoom"
+                      visible={false}
+                      width={520}
+      />,
+                  ],
+                },
+                "rootContainerInstance": Object {
+                  "children": Array [
+                    [Circular],
+                  ],
+                  "createNodeMock": [Function],
+                  "tag": "CONTAINER",
+                },
+                "tag": "INSTANCE",
+                "type": "div",
+              },
+              "tag": 5,
+              "type": "div",
+              "updateQueue": null,
+            },
+            "sibling": null,
+            "stateNode": Modal {
+              "_reactInternalFiber": [Circular],
+              "_reactInternalInstance": Object {},
+              "context": Object {},
+              "handleCancel": [Function],
+              "handleOk": [Function],
+              "props": Object {
+                "cancelText": "Cancel",
+                "children": "",
+                "confirmLoading": false,
+                "footer": null,
+                "maskTransitionName": "fade",
+                "okText": "Ok",
+                "okType": "primary",
+                "onCancel": [Function],
+                "onOk": [Function],
+                "prefixCls": "ant-modal",
+                "title": "",
+                "transitionName": "zoom",
+                "visible": false,
+                "width": 520,
+              },
+              "refs": Object {},
+              "renderFooter": [Function],
+              "state": null,
+              "updater": Object {
+                "enqueueForceUpdate": [Function],
+                "enqueueReplaceState": [Function],
+                "enqueueSetState": [Function],
+                "isMounted": [Function],
+              },
+            },
+            "tag": 2,
+            "type": [Function],
+            "updateQueue": null,
+          },
+          "memoizedProps": Object {
+            "children": <div>
+              Dummy Content
+      </div>,
+          },
+          "memoizedState": Object {
+            "content": "",
+            "open": false,
+            "title": "",
+          },
+          "mode": 0,
+          "nextEffect": null,
+          "pendingProps": Object {
+            "children": <div>
+              Dummy Content
+      </div>,
+          },
+          "ref": null,
+          "return": FiberNode {
+            "_debugID": 1,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "alternate": FiberNode {
+              "_debugID": 1,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "alternate": [Circular],
+              "child": null,
+              "effectTag": 0,
+              "expirationTime": 1,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": null,
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": Object {
+                  "children": Array [
+                    Object {
+                      "children": Array [
+                        Object {
+                          "children": Array [
+                            Object {
+                              "tag": "TEXT",
+                              "text": "Dummy Content",
+                            },
+                          ],
+                          "props": Object {
+                            "Dialog": [Circular],
+                            "children": "Dummy Content",
+                          },
+                          "rootContainerInstance": [Circular],
+                          "tag": "INSTANCE",
+                          "type": "div",
+                        },
+                      ],
+                      "props": Object {
+                        "children": Array [
+                          Array [
+                            <div
+                              Dialog={[Circular]}
+      >
+                              Dummy Content
+      </div>,
+                          ],
+                          <Modal
+                            cancelText="Cancel"
+                            confirmLoading={false}
+                            footer={null}
+                            maskTransitionName="fade"
+                            okText="Ok"
+                            okType="primary"
+                            onCancel={[Function]}
+                            onOk={[Function]}
+                            prefixCls="ant-modal"
+                            title=""
+                            transitionName="zoom"
+                            visible={false}
+                            width={520}
+      />,
+                        ],
+                      },
+                      "rootContainerInstance": [Circular],
+                      "tag": "INSTANCE",
+                      "type": "div",
+                    },
+                  ],
+                  "createNodeMock": [Function],
+                  "tag": "CONTAINER",
+                },
+                "context": Object {},
+                "current": [Circular],
+                "finishedWork": null,
+                "firstBatch": null,
+                "hydrate": false,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingCommitExpirationTime": 0,
+                "pendingContext": null,
+                "remainingExpirationTime": 0,
+              },
+              "tag": 3,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": null,
+                "callbackList": null,
+                "capturedValues": null,
+                "expirationTime": 1,
+                "first": Object {
+                  "callback": null,
+                  "capturedValue": null,
+                  "expirationTime": 1,
+                  "isForced": false,
+                  "isReplace": false,
+                  "next": null,
+                  "partialState": Object {
+                    "element": <Dialog>
+                      <div>
+                                      Dummy Content
+                      </div>
+      </Dialog>,
+                  },
+                },
+                "hasForceUpdate": false,
+                "isInitialized": false,
+                "isProcessing": false,
+                "last": Object {
+                  "callback": null,
+                  "capturedValue": null,
+                  "expirationTime": 1,
+                  "isForced": false,
+                  "isReplace": false,
+                  "next": null,
+                  "partialState": Object {
+                    "element": <Dialog>
+                      <div>
+                                      Dummy Content
+                      </div>
+      </Dialog>,
+                  },
+                },
+              },
+            },
+            "child": [Circular],
+            "effectTag": 0,
+            "expirationTime": 0,
+            "firstEffect": FiberNode {
+              "_debugID": 6,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": [Circular],
+              "_debugSource": Object {
+                "fileName": "/Users/nthock/Documents/Projects/enterprise/boilerplate/frontend_react/src/shared/Dialog.js",
+                "lineNumber": 28,
+              },
+              "alternate": null,
+              "child": FiberNode {
+                "_debugID": 9,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": [Circular],
+                "_debugSource": null,
+                "alternate": null,
+                "child": null,
+                "effectTag": 1,
+                "expirationTime": 0,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Object {
+                  "cancelText": "Cancel",
+                  "children": "",
+                  "confirmLoading": false,
+                  "footer": null,
+                  "maskTransitionName": "fade",
+                  "mousePosition": undefined,
+                  "okText": "Ok",
+                  "okType": "primary",
+                  "onCancel": [Function],
+                  "onClose": [Function],
+                  "onOk": [Function],
+                  "prefixCls": "ant-modal",
+                  "title": "",
+                  "transitionName": "zoom",
+                  "visible": false,
+                  "width": 520,
+                },
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": Object {
+                  "cancelText": "Cancel",
+                  "children": "",
+                  "confirmLoading": false,
+                  "footer": null,
+                  "maskTransitionName": "fade",
+                  "mousePosition": undefined,
+                  "okText": "Ok",
+                  "okType": "primary",
+                  "onCancel": [Function],
+                  "onClose": [Function],
+                  "onOk": [Function],
+                  "prefixCls": "ant-modal",
+                  "title": "",
+                  "transitionName": "zoom",
+                  "visible": false,
+                  "width": 520,
+                },
+                "ref": null,
+                "return": [Circular],
+                "sibling": null,
+                "stateNode": DialogWrap {
+                  "_reactInternalFiber": [Circular],
+                  "_reactInternalInstance": Object {},
+                  "context": Object {},
+                  "getComponent": [Function],
+                  "getContainer": [Function],
+                  "props": Object {
+                    "cancelText": "Cancel",
+                    "children": "",
+                    "confirmLoading": false,
+                    "footer": null,
+                    "maskTransitionName": "fade",
+                    "mousePosition": undefined,
+                    "okText": "Ok",
+                    "okType": "primary",
+                    "onCancel": [Function],
+                    "onClose": [Function],
+                    "onOk": [Function],
+                    "prefixCls": "ant-modal",
+                    "title": "",
+                    "transitionName": "zoom",
+                    "visible": false,
+                    "width": 520,
+                  },
+                  "refs": Object {},
+                  "saveDialog": [Function],
+                  "state": null,
+                  "updater": Object {
+                    "enqueueForceUpdate": [Function],
+                    "enqueueReplaceState": [Function],
+                    "enqueueSetState": [Function],
+                    "isMounted": [Function],
+                  },
+                },
+                "tag": 2,
+                "type": [Function],
+                "updateQueue": null,
+              },
+              "effectTag": 5,
+              "expirationTime": 0,
+              "firstEffect": null,
+              "index": 1,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Object {
+                "cancelText": "Cancel",
+                "children": "",
+                "confirmLoading": false,
+                "footer": null,
+                "maskTransitionName": "fade",
+                "okText": "Ok",
+                "okType": "primary",
+                "onCancel": [Function],
+                "onOk": [Function],
+                "prefixCls": "ant-modal",
+                "title": "",
+                "transitionName": "zoom",
+                "visible": false,
+                "width": 520,
+              },
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": Object {
+                "cancelText": "Cancel",
+                "children": "",
+                "confirmLoading": false,
+                "footer": null,
+                "maskTransitionName": "fade",
+                "okText": "Ok",
+                "okType": "primary",
+                "onCancel": [Function],
+                "onOk": [Function],
+                "prefixCls": "ant-modal",
+                "title": "",
+                "transitionName": "zoom",
+                "visible": false,
+                "width": 520,
+              },
+              "ref": null,
+              "return": FiberNode {
+                "_debugID": 4,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": [Circular],
+                "_debugSource": Object {
+                  "fileName": "/Users/nthock/Documents/Projects/enterprise/boilerplate/frontend_react/src/shared/Dialog.js",
+                  "lineNumber": 26,
+                },
+                "alternate": null,
+                "child": FiberNode {
+                  "_debugID": 5,
+                  "_debugIsCurrentlyTiming": false,
+                  "_debugOwner": null,
+                  "_debugSource": null,
+                  "alternate": null,
+                  "child": FiberNode {
+                    "_debugID": 7,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": null,
+                    "_debugSource": Object {
+                      "fileName": "/Users/nthock/Documents/Projects/enterprise/boilerplate/frontend_react/src/tests/shared/Dialog.spec.js",
+                      "lineNumber": 9,
+                    },
+                    "alternate": null,
+                    "child": FiberNode {
+                      "_debugID": 8,
+                      "_debugIsCurrentlyTiming": false,
+                      "_debugOwner": null,
+                      "_debugSource": null,
+                      "alternate": null,
+                      "child": null,
+                      "effectTag": 0,
+                      "expirationTime": 0,
+                      "firstEffect": null,
+                      "index": 0,
+                      "key": null,
+                      "lastEffect": null,
+                      "memoizedProps": "Dummy Content",
+                      "memoizedState": null,
+                      "mode": 0,
+                      "nextEffect": null,
+                      "pendingProps": "Dummy Content",
+                      "ref": null,
+                      "return": [Circular],
+                      "sibling": null,
+                      "stateNode": Object {
+                        "tag": "TEXT",
+                        "text": "Dummy Content",
+                      },
+                      "tag": 6,
+                      "type": null,
+                      "updateQueue": null,
+                    },
+                    "effectTag": 0,
+                    "expirationTime": 0,
+                    "firstEffect": null,
+                    "index": 0,
+                    "key": ".0",
+                    "lastEffect": null,
+                    "memoizedProps": Object {
+                      "Dialog": [Circular],
+                      "children": "Dummy Content",
+                    },
+                    "memoizedState": null,
+                    "mode": 0,
+                    "nextEffect": null,
+                    "pendingProps": Object {
+                      "Dialog": [Circular],
+                      "children": "Dummy Content",
+                    },
+                    "ref": null,
+                    "return": [Circular],
+                    "sibling": null,
+                    "stateNode": Object {
+                      "children": Array [
+                        Object {
+                          "tag": "TEXT",
+                          "text": "Dummy Content",
+                        },
+                      ],
+                      "props": Object {
+                        "Dialog": [Circular],
+                        "children": "Dummy Content",
+                      },
+                      "rootContainerInstance": Object {
+                        "children": Array [
+                          Object {
+                            "children": Array [
+                              [Circular],
+                            ],
+                            "props": Object {
+                              "children": Array [
+                                Array [
+                                  <div
+                                    Dialog={[Circular]}
+      >
+                                    Dummy Content
+      </div>,
+                                ],
+                                <Modal
+                                  cancelText="Cancel"
+                                  confirmLoading={false}
+                                  footer={null}
+                                  maskTransitionName="fade"
+                                  okText="Ok"
+                                  okType="primary"
+                                  onCancel={[Function]}
+                                  onOk={[Function]}
+                                  prefixCls="ant-modal"
+                                  title=""
+                                  transitionName="zoom"
+                                  visible={false}
+                                  width={520}
+      />,
+                              ],
+                            },
+                            "rootContainerInstance": [Circular],
+                            "tag": "INSTANCE",
+                            "type": "div",
+                          },
+                        ],
+                        "createNodeMock": [Function],
+                        "tag": "CONTAINER",
+                      },
+                      "tag": "INSTANCE",
+                      "type": "div",
+                    },
+                    "tag": 5,
+                    "type": "div",
+                    "updateQueue": null,
+                  },
+                  "effectTag": 0,
+                  "expirationTime": 0,
+                  "firstEffect": null,
+                  "index": 0,
+                  "key": null,
+                  "lastEffect": null,
+                  "memoizedProps": Array [
+                    <div
+                      Dialog={[Circular]}
+      >
+                      Dummy Content
+      </div>,
+                  ],
+                  "memoizedState": null,
+                  "mode": 0,
+                  "nextEffect": null,
+                  "pendingProps": Array [
+                    <div
+                      Dialog={[Circular]}
+      >
+                      Dummy Content
+      </div>,
+                  ],
+                  "ref": null,
+                  "return": [Circular],
+                  "sibling": [Circular],
+                  "stateNode": null,
+                  "tag": 10,
+                  "type": null,
+                  "updateQueue": null,
+                },
+                "effectTag": 0,
+                "expirationTime": 0,
+                "firstEffect": [Circular],
+                "index": 0,
+                "key": null,
+                "lastEffect": [Circular],
+                "memoizedProps": Object {
+                  "children": Array [
+                    Array [
+                      <div
+                        Dialog={[Circular]}
+      >
+                        Dummy Content
+      </div>,
+                    ],
+                    <Modal
+                      cancelText="Cancel"
+                      confirmLoading={false}
+                      footer={null}
+                      maskTransitionName="fade"
+                      okText="Ok"
+                      okType="primary"
+                      onCancel={[Function]}
+                      onOk={[Function]}
+                      prefixCls="ant-modal"
+                      title=""
+                      transitionName="zoom"
+                      visible={false}
+                      width={520}
+      />,
+                  ],
+                },
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": Object {
+                  "children": Array [
+                    Array [
+                      <div
+                        Dialog={[Circular]}
+      >
+                        Dummy Content
+      </div>,
+                    ],
+                    <Modal
+                      cancelText="Cancel"
+                      confirmLoading={false}
+                      footer={null}
+                      maskTransitionName="fade"
+                      okText="Ok"
+                      okType="primary"
+                      onCancel={[Function]}
+                      onOk={[Function]}
+                      prefixCls="ant-modal"
+                      title=""
+                      transitionName="zoom"
+                      visible={false}
+                      width={520}
+      />,
+                  ],
+                },
+                "ref": null,
+                "return": [Circular],
+                "sibling": null,
+                "stateNode": Object {
+                  "children": Array [
+                    Object {
+                      "children": Array [
+                        Object {
+                          "tag": "TEXT",
+                          "text": "Dummy Content",
+                        },
+                      ],
+                      "props": Object {
+                        "Dialog": [Circular],
+                        "children": "Dummy Content",
+                      },
+                      "rootContainerInstance": Object {
+                        "children": Array [
+                          [Circular],
+                        ],
+                        "createNodeMock": [Function],
+                        "tag": "CONTAINER",
+                      },
+                      "tag": "INSTANCE",
+                      "type": "div",
+                    },
+                  ],
+                  "props": Object {
+                    "children": Array [
+                      Array [
+                        <div
+                          Dialog={[Circular]}
+      >
+                          Dummy Content
+      </div>,
+                      ],
+                      <Modal
+                        cancelText="Cancel"
+                        confirmLoading={false}
+                        footer={null}
+                        maskTransitionName="fade"
+                        okText="Ok"
+                        okType="primary"
+                        onCancel={[Function]}
+                        onOk={[Function]}
+                        prefixCls="ant-modal"
+                        title=""
+                        transitionName="zoom"
+                        visible={false}
+                        width={520}
+      />,
+                    ],
+                  },
+                  "rootContainerInstance": Object {
+                    "children": Array [
+                      [Circular],
+                    ],
+                    "createNodeMock": [Function],
+                    "tag": "CONTAINER",
+                  },
+                  "tag": "INSTANCE",
+                  "type": "div",
+                },
+                "tag": 5,
+                "type": "div",
+                "updateQueue": null,
+              },
+              "sibling": null,
+              "stateNode": Modal {
+                "_reactInternalFiber": [Circular],
+                "_reactInternalInstance": Object {},
+                "context": Object {},
+                "handleCancel": [Function],
+                "handleOk": [Function],
+                "props": Object {
+                  "cancelText": "Cancel",
+                  "children": "",
+                  "confirmLoading": false,
+                  "footer": null,
+                  "maskTransitionName": "fade",
+                  "okText": "Ok",
+                  "okType": "primary",
+                  "onCancel": [Function],
+                  "onOk": [Function],
+                  "prefixCls": "ant-modal",
+                  "title": "",
+                  "transitionName": "zoom",
+                  "visible": false,
+                  "width": 520,
+                },
+                "refs": Object {},
+                "renderFooter": [Function],
+                "state": null,
+                "updater": Object {
+                  "enqueueForceUpdate": [Function],
+                  "enqueueReplaceState": [Function],
+                  "enqueueSetState": [Function],
+                  "isMounted": [Function],
+                },
+              },
+              "tag": 2,
+              "type": [Function],
+              "updateQueue": null,
+            },
+            "index": 0,
+            "key": null,
+            "lastEffect": [Circular],
+            "memoizedProps": null,
+            "memoizedState": Object {
+              "element": <Dialog>
+                <div>
+                          Dummy Content
+                </div>
+      </Dialog>,
+            },
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": null,
+            "sibling": null,
+            "stateNode": Object {
+              "containerInfo": Object {
+                "children": Array [
+                  Object {
+                    "children": Array [
+                      Object {
+                        "children": Array [
+                          Object {
+                            "tag": "TEXT",
+                            "text": "Dummy Content",
+                          },
+                        ],
+                        "props": Object {
+                          "Dialog": [Circular],
+                          "children": "Dummy Content",
+                        },
+                        "rootContainerInstance": [Circular],
+                        "tag": "INSTANCE",
+                        "type": "div",
+                      },
+                    ],
+                    "props": Object {
+                      "children": Array [
+                        Array [
+                          <div
+                            Dialog={[Circular]}
+      >
+                            Dummy Content
+      </div>,
+                        ],
+                        <Modal
+                          cancelText="Cancel"
+                          confirmLoading={false}
+                          footer={null}
+                          maskTransitionName="fade"
+                          okText="Ok"
+                          okType="primary"
+                          onCancel={[Function]}
+                          onOk={[Function]}
+                          prefixCls="ant-modal"
+                          title=""
+                          transitionName="zoom"
+                          visible={false}
+                          width={520}
+      />,
+                      ],
+                    },
+                    "rootContainerInstance": [Circular],
+                    "tag": "INSTANCE",
+                    "type": "div",
+                  },
+                ],
+                "createNodeMock": [Function],
+                "tag": "CONTAINER",
+              },
+              "context": Object {},
+              "current": [Circular],
+              "finishedWork": null,
+              "firstBatch": null,
+              "hydrate": false,
+              "nextScheduledRoot": null,
+              "pendingChildren": null,
+              "pendingCommitExpirationTime": 0,
+              "pendingContext": null,
+              "remainingExpirationTime": 0,
+            },
+            "tag": 3,
+            "type": null,
+            "updateQueue": null,
+          },
+          "sibling": null,
+          "stateNode": [Circular],
+          "tag": 2,
+          "type": [Function],
+          "updateQueue": null,
+        },
+        "_reactInternalInstance": Object {},
+        "close": [Function],
+        "context": Object {},
+        "open": [Function],
+        "props": Object {
+          "children": <div>
+            Dummy Content
+      </div>,
+        },
+        "refs": Object {},
+        "state": Object {
+          "content": "",
+          "open": false,
+          "title": "",
+        },
+        "updater": Object {
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+        },
+      }
+    }
+  >
+    Dummy Content
+  </div>
+</div>
+`;

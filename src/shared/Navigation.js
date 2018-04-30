@@ -115,8 +115,7 @@ Navigation.propTypes = {
   currentUser: PropTypes.shape({
     name: PropTypes.string,
     admin: PropTypes.bool,
-    super_admin: PropTypes.bool,
-    id: PropTypes.string
+    super_admin: PropTypes.bool
   }).isRequired
 };
 

@@ -1,73 +1,91 @@
 ```javascript
 import React from "react";
 import { mount } from "enzyme";
-import { MockedProvider } from "react-apollo/test-utils";
-import { authenticateUser } from "../../../bundles/session/graphql";
-import { LoginFormComposer } from "../../../bundles/session/composers/LoginFormComposer";
-
-const user = {
-  id: 1,
-  email: "bb@bb.com",
-  token: "abc"
-};
+import ResetPasswordComposer from "../../../bundles/user/composers/ResetPasswordComposer";
 
 const EmptyComponent = () => null;
-const EnhancedComponent = LoginFormComposer(props => (
+const EnhancedComponent = ResetPasswordComposer(props => (
   <EmptyComponent {...props} />
 ));
 
-describe("LoginFormComposer", () => {
+describe("ResetPasswordComposer", () => {
   let wrapper;
   let enhancedComponent;
 
   beforeEach(() => {
-    wrapper = mount(
-      <MockedProvider
-        mocks={[
-          {
-            request: {
-              query: authenticateUser,
-              variables: { email: "bb@bb.com", password: "secret" }
-            },
-            result: {
-              data: user
-            }
-          }
-        ]}
-      >
-        <EnhancedComponent />
-      </MockedProvider>
-    );
+    Object.defineProperty(global.window.location, "href", {
+      writable: true,
+      value: "http://localhost:3000/reset_password?token=abc"
+    });
+    wrapper = mount(<EnhancedComponent />);
     enhancedComponent = wrapper.find(EmptyComponent);
   });
 
-  test("it should return the default formData of empty email and password", () => {
-    const { formData } = enhancedComponent.props();
-    expect(formData).toEqual({ email: "", password: "" });
+  test("blah blah", () => {
+    console.log(enhancedComponent.props());
   });
 
-  test("it should update the formData when call setFormData", () => {
-    const { setFormData } = enhancedComponent.props();
-    const userLogin = {
-      email: "bb@bb.com",
-      password: "secret"
-    };
-    setFormData(userLogin);
-
-    wrapper.update();
-    expect(wrapper.find(EmptyComponent).props().formData).toEqual(userLogin);
-  });
-
-  test("it should match snapshot for handleSave", () => {
-    const { handleSave, setFormData } = enhancedComponent.props();
-    const userLogin = {
-      email: "bb@bb.com",
-      password: "secret"
-    };
-    setFormData(userLogin);
-    handleSave();
-    wrapper.update();
-  });
+  // test("it should return the default formData of empty email", () => {
+  //   const { formData } = enhancedComponent.props();
+  //   expect(formData).toEqual({
+  //     email: ""
+  //   });
+  // });
+  //
+  // test("it should update the formData when call setFormData", () => {
+  //   const { setFormData } = enhancedComponent.props();
+  //   const userForgotPassword = {
+  //     email: "bb@bb.com"
+  //   };
+  //   setFormData(userForgotPassword);
+  //
+  //   wrapper.update();
+  //   expect(wrapper.find(EmptyComponent).props().formData).toEqual(
+  //     userForgotPassword
+  //   );
+  // });
+  //
+  // test("it should return the default formErrors of empty name, email, pw and pw confirmation", () => {
+  //   const { formErrors } = enhancedComponent.props();
+  //   expect(formErrors).toEqual({
+  //     email: ""
+  //   });
+  // });
+  //
+  // test("it should update the formData when call setFormData", () => {
+  //   const { setFormErrors } = enhancedComponent.props();
+  //   const userForgotPasswordError = {
+  //     email: "must be present"
+  //   };
+  //   setFormErrors(userForgotPasswordError);
+  //
+  //   wrapper.update();
+  //   expect(wrapper.find(EmptyComponent).props().formErrors).toEqual(
+  //     userForgotPasswordError
+  //   );
+  // });
+  //
+  // test("it should set the formError when the email is invalid", () => {
+  //   const { handleSave, setFormData } = enhancedComponent.props();
+  //   setFormData({ email: "bbbbb" });
+  //   wrapper.update();
+  //   handleSave();
+  //   wrapper.update();
+  //   expect(wrapper.find(EmptyComponent).props().formErrors).toEqual({
+  //     email: "Invalid Email"
+  //   });
+  // });
+  //
+  // test("it should call the mutate function when call handleSave", () => {
+  //   const { handleSave, setFormData, mutate } = enhancedComponent.props();
+  //   const user = {
+  //     email: "bb@bb.com"
+  //   };
+  //   setFormData(user);
+  //   handleSave();
+  //   wrapper.update();
+  //   expect(mutate.mock.calls.length).toBe(1);
+  // });
 });
 
 ```

@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`adminListComposer when admins are fetched successfully it should match snapshot 1`] = `
+Object {
+  "data": Object {
+    "admins": Array [
+      Object {
+        "admin": true,
+        "designation": null,
+        "email": "admin1@eg.com",
+        "errors": Array [],
+        "id": 1,
+        "name": "admin1",
+        "status": "active",
+        "super_admin": false,
+      },
+      Object {
+        "admin": true,
+        "designation": null,
+        "email": "admin2@eg.com",
+        "errors": Array [],
+        "id": 2,
+        "name": "admin2",
+        "status": "invited",
+        "super_admin": false,
+      },
+    ],
+  },
+  "handleDelete": [Function],
+  "sendInvite": [Function],
+  "sendInviteMutate": [Function],
+}
+`;
+
+exports[`adminListComposer when there is an error in fetching admins it should match snapshot 1`] = `
+Object {
+  "data": Object {
+    "admins": Array [
+      Object {
+        "admin": true,
+        "designation": null,
+        "email": "admin1@eg.com",
+        "errors": Array [
+          Object {
+            "key": "error",
+            "message": "error message",
+          },
+        ],
+        "id": 1,
+        "name": "admin1",
+        "status": "active",
+        "super_admin": false,
+      },
+      Object {
+        "admin": true,
+        "designation": null,
+        "email": "admin2@eg.com",
+        "errors": Array [],
+        "id": 2,
+        "name": "admin2",
+        "status": "active",
+        "super_admin": false,
+      },
+    ],
+  },
+  "handleDelete": [Function],
+  "sendInvite": [Function],
+  "sendInviteMutate": [Function],
+}
+`;
